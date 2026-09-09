@@ -1,86 +1,3067 @@
-<button class="btn gold" type="submit">REQUEST QUOTE ON WHATSAPP</button>
-</form></section>
 
-<section id="contact"><h2>Contact Us</h2><p class="sub">Kanpur & nearby areas</p><div class="grid">
-<div class="card"><h3>WhatsApp 1</h3><p><a href="https://wa.me/917007115735">7007115735</a></p></div><docty!pe html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>INDRA HOME SOLUTIONS | Electrical, Furniture & Interiors in Kanpur</title>
-<meta name="description" content="INDRA HOME SOLUTIONS provides professional electrical wiring, furniture, sliding furniture, interiors and home project services in Kanpur and nearby areas.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>INDRA HOME SOLUTIONS | Furniture, Electrical & Interior Work in Kanpur</title>
+
+<meta name="description"
+content="INDRA HOME SOLUTIONS provides professional furniture, electrical, interior, sliding furniture, modular kitchen and home project services in Kanpur and nearby areas.">
+
+<meta name="keywords"
+content="INDRA HOME SOLUTIONS, furniture Kanpur, electrical work Kanpur, interior Kanpur, sliding wardrobe Kanpur, modular kitchen Kanpur">
+
+<meta name="theme-color" content="#0b0b0b">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#171717;background:#fafafa;line-height:1.6}
-header{position:sticky;top:0;z-index:10;background:#0b0b0b;border-bottom:1px solid #c9a24a}
-.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}.logo{height:58px;max-width:220px;object-fit:contain}
-nav a{color:#fff;text-decoration:none;margin:0 8px;font-size:14px}
-.hero{background:linear-gradient(135deg,#080808,#252525);color:#fff;padding:75px 20px;text-align:center}
-.hero h1{font-size:clamp(34px,7vw,62px);margin:10px 0;color:#e2bd61}.hero p{max-width:720px;margin:15px auto 28px;font-size:19px;color:#eee}
-.btn{display:inline-block;padding:13px 22px;margin:6px;border-radius:8px;text-decoration:none;font-weight:bold;border:1px solid #d4af57}.gold{background:#d4af57;color:#111}.dark{background:#111;color:#fff}
-section{max-width:1100px;margin:auto;padding:65px 20px}h2{text-align:center;font-size:34px;margin:0 0 12px} .sub{text-align:center;color:#666;margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#fff;padding:24px;border-radius:14px;border:1px solid #e3e3e3;box-shadow:0 5px 20px #0000000b}.card h3{margin-top:0;color:#9a7428}
-.about{background:#111;color:#fff;max-width:none}.about>div{max-width:1100px;margin:auto}.about p{color:#ddd}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}.feature{text-align:center;padding:18px;border:1px solid #ddd;border-radius:12px;background:#fff}
-form{max-width:700px;margin:auto;background:#fff;padding:28px;border-radius:16px;box-shadow:0 5px 25px #0001}input,select,textarea{width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ccc;border-radius:8px;font-size:16px}textarea{min-height:120px}
-.contact{background:#f0ece3}.contact .grid{max-width:800px;margin:auto}.contact a{color:#8a641b;font-weight:bold}
-footer{background:#080808;color:#bbb;text-align:center;padding:35px 20px}footer strong{color:#d4af57}
-@media(max-width:700px){nav{display:none}.logo{height:50px}.hero{padding:55px 18px}section{padding:50px 16px}}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+html{
+    scroll-padding-top:80px;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#fafafa;
+    color:#181818;
+    line-height:1.6;
+    transition:.3s;
+}
+
+body.dark{
+    background:#111;
+    color:#eee;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+.container{
+    width:100%;
+    max-width:1150px;
+    margin:auto;
+    padding:0 20px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:#080808;
+    border-bottom:2px solid #d4af57;
+    box-shadow:0 3px 18px rgba(0,0,0,.35);
+}
+
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    min-height:72px;
+    padding:8px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    object-fit:contain;
+}
+
+.brand-text{
+    color:#d4af57;
+    font-size:20px;
+    font-weight:900;
+    letter-spacing:.5px;
+}
+
+.brand-text small{
+    display:block;
+    color:#fff;
+    font-size:9px;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:17px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    font-size:13px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af57;
+}
+
+.menu-button{
+    display:none;
+    border:0;
+    background:none;
+    color:#fff;
+    font-size:30px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:670px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,0,0,.88),
+        rgba(35,35,35,.68)
+    ),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:50px 20px;
+}
+
+.hero-badge{
+    display:inline-block;
+    border:1px solid #d4af57;
+    color:#d4af57;
+    padding:7px 16px;
+    border-radius:30px;
+    margin-bottom:18px;
+    font-size:13px;
+}
+
+.hero h1{
+    font-size:clamp(38px,7vw,70px);
+    line-height:1.1;
+    color:#e2bd61;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:clamp(21px,3vw,30px);
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:0 auto 30px;
+    color:#eee;
+    font-size:19px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:8px;
+    border:1px solid #d4af57;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.gold{
+    background:#d4af57;
+    color:#111;
+}
+
+.black{
+    background:#111;
+    color:#fff;
+}
+
+.green{
+    background:#25d366;
+    border-color:#25d366;
+    color:#fff;
+}
+
+.blue{
+    background:#1769aa;
+    border-color:#1769aa;
+    color:#fff;
+}
+
+
+/* =========================================================
+   COMMON SECTIONS
+========================================================= */
+
+section{
+    padding:75px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#9a7428;
+    margin-bottom:8px;
+}
+
+.dark .section-title h2{
+    color:#e2bd61;
+}
+
+.section-title p{
+    color:#666;
+}
+
+.dark .section-title p{
+    color:#bbb;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about{
+    background:#111;
+    color:#fff;
+}
+
+.about-content{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.about h2{
+    color:#d4af57;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#ddd;
+    font-size:17px;
+}
+
+.owner-name{
+    margin-top:22px;
+    font-size:13px;
+    color:#aaa;
+}
+
+.owner-name strong{
+    color:#d4af57;
+    font-size:15px;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-section{
+    background:#f2f2f2;
+}
+
+.dark .services-section{
+    background:#191919;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:#fff;
+    padding:27px;
+    border-radius:15px;
+    border:1px solid #ddd;
+    box-shadow:0 7px 25px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.dark .card{
+    background:#202020;
+    border-color:#333;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 14px 35px rgba(0,0,0,.14);
+}
+
+.card-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#9a7428;
+    margin-bottom:9px;
+}
+
+.card p{
+    color:#666;
+}
+
+.dark .card p{
+    color:#ccc;
+}
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+}
+
+.feature{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:13px;
+    padding:25px 15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.dark .feature{
+    background:#202020;
+    border-color:#333;
+}
+
+.feature-icon{
+    display:block;
+    font-size:34px;
+    margin-bottom:7px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats{
+    background:#090909;
+    color:#fff;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.stat h3{
+    color:#d4af57;
+    font-size:45px;
+}
+
+.stat p{
+    color:#ddd;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-section{
+    background:#fff;
+}
+
+.dark .gallery-section{
+    background:#111;
+}
+
+.gallery-tools{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin-bottom:25px;
+}
+
+.filter-btn{
+    padding:9px 17px;
+    border-radius:22px;
+    border:1px solid #a47c2a;
+    background:#fff;
+    color:#765719;
+}
+
+.dark .filter-btn{
+    background:#202020;
+    color:#e2bd61;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+    background:#d4af57;
+    color:#111;
+}
+
+.upload-box{
+    max-width:800px;
+    margin:0 auto 35px;
+    padding:25px;
+    border:2px dashed #d4af57;
+    border-radius:15px;
+    text-align:center;
+    background:#faf8f1;
+}
+
+.dark .upload-box{
+    background:#1c1c1c;
+}
+
+.upload-box h3{
+    color:#9a7428;
+    margin-bottom:7px;
+}
+
+.upload-box p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.dark .upload-box p{
+    color:#bbb;
+}
+
+.file-input{
+    display:none;
+}
+
+.upload-label{
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:8px;
+    background:#d4af57;
+    color:#111;
+    font-weight:bold;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.gallery-item{
+    position:relative;
+    height:270px;
+    overflow:hidden;
+    border-radius:14px;
+    background:#eee;
+    cursor:pointer;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:45px 14px 13px;
+    color:#fff;
+    background:linear-gradient(transparent,rgba(0,0,0,.88));
+}
+
+.gallery-overlay strong{
+    display:block;
+}
+
+.gallery-delete{
+    position:absolute;
+    right:10px;
+    top:10px;
+    border:0;
+    background:#d62828;
+    color:#fff;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    font-size:17px;
+    z-index:2;
+}
+
+.gallery-empty{
+    grid-column:1/-1;
+    text-align:center;
+    padding:40px;
+    border:1px dashed #bbb;
+    border-radius:12px;
+    color:#777;
+}
+
+
+/* =========================================================
+   CALCULATOR
+========================================================= */
+
+.calculator-section{
+    background:#f0ece3;
+}
+
+.dark .calculator-section{
+    background:#191919;
+}
+
+.calculator{
+    max-width:720px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 8px 30px rgba(0,0,0,.1);
+}
+
+.dark .calculator{
+    background:#202020;
+}
+
+.form-group{
+    margin-bottom:17px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    background:#fff;
+    color:#111;
+}
+
+.dark input,
+.dark select,
+.dark textarea{
+    background:#111;
+    color:#fff;
+    border-color:#444;
+}
+
+textarea{
+    min-height:120px;
+}
+
+.total-box{
+    margin-top:20px;
+    padding:20px;
+    background:#f4efe3;
+    border-radius:10px;
+    text-align:center;
+}
+
+.total-box h3{
+    color:#9a7428;
+    font-size:32px;
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.review{
+    background:#fff;
+    padding:26px;
+    border-radius:14px;
+    border:1px solid #ddd;
+}
+
+.dark .review{
+    background:#202020;
+    border-color:#333;
+}
+
+.stars{
+    color:#f3a600;
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.review p{
+    color:#666;
+}
+
+.dark .review p{
+    color:#ccc;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    max-width:850px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:12px;
+}
+
+.dark .faq-item{
+    background:#202020;
+    border-color:#333;
+}
+
+.faq-question{
+    padding:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.faq-icon{
+    font-size:22px;
+    color:#9a7428;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 18px 18px;
+    color:#666;
+}
+
+.dark .faq-answer{
+    color:#ccc;
+}
+
+
+/* =========================================================
+   QUOTE FORM
+========================================================= */
+
+.quote-section{
+    background:#111;
+}
+
+.quote-section .section-title h2{
+    color:#d4af57;
+}
+
+.quote-section .section-title p{
+    color:#ccc;
+}
+
+.quote-form{
+    max-width:760px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+}
+
+.dark .quote-form{
+    background:#202020;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-info{
+    text-align:center;
+}
+
+.contact-number{
+    display:inline-block;
+    padding:14px 20px;
+    margin:6px;
+    border-radius:9px;
+    background:#f1f1f1;
+    color:#333;
+    font-weight:bold;
+}
+
+.dark .contact-number{
+    background:#222;
+    color:#fff;
+}
+
+.map{
+    width:100%;
+    height:360px;
+    border:0;
+    border-radius:15px;
+    margin-top:35px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#050505;
+    color:#aaa;
+    text-align:center;
+    padding:42px 20px;
+}
+
+footer strong{
+    color:#d4af57;
+    font-size:23px;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:#ddd;
+    margin:0 7px;
+}
+
+
+/* =========================================================
+   FLOATING WHATSAPP
+========================================================= */
+
+.whatsapp-floating{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    z-index:5000;
+
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.wa-button{
+    background:#25d366;
+    color:#fff;
+    padding:11px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    box-shadow:0 5px 18px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   TOP BUTTON
+========================================================= */
+
+.top-button{
+    position:fixed;
+    right:18px;
+    bottom:145px;
+    width:45px;
+    height:45px;
+    border:0;
+    border-radius:50%;
+    background:#d4af57;
+    color:#111;
+    font-size:22px;
+    display:none;
+    z-index:5000;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    z-index:10000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,.94);
+    padding:20px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-image{
+    max-width:94%;
+    max-height:84vh;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.modal-close{
+    position:absolute;
+    right:25px;
+    top:10px;
+    color:#fff;
+    font-size:48px;
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:30px;
+    transform:translateX(-50%);
+    background:#111;
+    color:#fff;
+    padding:13px 20px;
+    border-radius:8px;
+    z-index:15000;
+    display:none;
+    box-shadow:0 5px 20px #0005;
+}
+
+.toast.show{
+    display:block;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:850px){
+
+    .menu-button{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:72px;
+        left:0;
+        right:0;
+        background:#080808;
+        flex-direction:column;
+        align-items:stretch;
+        padding:18px 25px;
+        border-bottom:2px solid #d4af57;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        text-align:center;
+        padding:5px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:55px 15px;
+    }
+
+    .navbar{
+        padding:8px 14px;
+    }
+
+    .brand-text{
+        font-size:16px;
+    }
+
+    .logo{
+        width:48px;
+        height:48px;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item{
+        height:250px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat h3{
+        font-size:35px;
+    }
+
+    .whatsapp-floating{
+        right:8px;
+        bottom:8px;
+    }
+
+    .wa-button{
+        font-size:11px;
+        padding:9px 12px;
+    }
+}
+
 </style>
 </head>
+
+
 <body>
-<header><div class="nav">
-<img class="logo" src="logo.png" alt="INDRA HOME SOLUTIONS">
-<nav><a href="#about">About</a><a href="#services">Services</a><a href="#quote">Get Quote</a><a href="#contact">Contact</a></nav>
-</div></header>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="navbar">
+
+<div class="brand">
+
+<img
+src="logo.png"
+class="logo"
+alt="INDRA HOME SOLUTIONS Logo">
+
+<div class="brand-text">
+INDRA
+<small>HOME SOLUTIONS</small>
+</div>
+
+</div>
+
+
+<button
+class="menu-button"
+onclick="toggleMenu()"
+aria-label="Open Menu">
+
+☰
+
+</button>
+
+
+<ul
+class="nav-links"
+id="navLinks">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#estimate">Estimate</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+
+<li>
+<button
+class="filter-btn"
+onclick="toggleDark()">
+🌙
+</button>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
 
 <main>
-<section class="hero">
-<h1>Complete Home Solutions Under One Roof</h1>
-<p>Professional Electrical, Furniture, Interiors & Home Project Services in Kanpur and nearby areas.</p>
-<a class="btn gold" href="#quote">GET FREE QUOTE</a>
-<a class="btn dark" href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS%2C%20I%20need%20a%20quotation%20for%20home%20work.">WHATSAPP NOW</a>
-<a class="btn dark" href="tel:+917007115735">CALL NOW</a>
+
+<section
+class="hero"
+id="home">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+WELCOME TO INDRA HOME SOLUTIONS
+</div>
+
+<h1>
+Complete Home Solutions
+</h1>
+
+<h2>
+Furniture • Electrical • Interior
+</h2>
+
+<p>
+Professional home project services in
+Kanpur and nearby areas. Discuss your
+requirement with us and get a quotation.
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#quote"
+class="btn gold">
+
+GET FREE QUOTE
+
+</a>
+
+
+<a
+href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20I%20need%20a%20quotation."
+target="_blank"
+class="btn green">
+
+WHATSAPP 7007115735
+
+</a>
+
+
+<a
+href="https://wa.me/919889784730?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20I%20need%20a%20quotation."
+target="_blank"
+class="btn green">
+
+WHATSAPP 9889784730
+
+</a>
+
+
+<a
+href="tel:+917007115735"
+class="btn black">
+
+📞 CALL NOW
+
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="about"><h2>About INDRA HOME SOLUTIONS</h2><p class="sub">Reliable work. Professional service. Customer-focused solutions.</p>
-<p>INDRA HOME SOLUTIONS is a professional home-solutions service provider focused on quality electrical, furniture, sliding furniture, interior and home project work. Our goal is to make your home project simple, reliable and professionally executed.</p></section>
 
-<section id="services" style="background:#f4f4f4;max-width:none"><div style="max-width:1100px;margin:auto"><h2>Our Services</h2><p class="sub">From electrical work to furniture and interiors, we help complete your home project.</p>
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+class="about"
+id="about">
+
+<div class="about-content">
+
+<h2>
+About INDRA HOME SOLUTIONS
+</h2>
+
+<p>
+INDRA HOME SOLUTIONS is focused on
+providing furniture, electrical, interior
+and selected home project services.
+</p>
+
+<br>
+
+<p>
+Our aim is to make home projects easier
+for customers through professional
+communication, quality workmanship and
+convenient service.
+</p>
+
+<div class="owner-name">
+Owner / Proprietor:
+<strong>Ram Milan</strong>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+class="services-section"
+id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Services
+</h2>
+
+<p>
+Complete solutions for your home requirements
+</p>
+
+</div>
+
+
 <div class="grid">
-<div class="card"><h3>⚡ House Electrical Wiring</h3><p>Complete wiring solutions for new homes, construction and renovation.</p></div>
-<div class="card"><h3>💡 Electrical Installation</h3><p>Lights, fans, switches, sockets, distribution boards and related installation.</p></div>
-<div class="card"><h3>🪑 Furniture Work</h3><p>Customized furniture solutions designed around your requirements.</p></div>
-<div class="card"><h3>🚪 Sliding Furniture</h3><p>Modern sliding wardrobes, cabinets and space-saving solutions.</p></div>
-<div class="card"><h3>🏠 Interior Work</h3><p>Practical and stylish home interior and improvement solutions.</p></div>
-<div class="card"><h3>🔧 Repair & Maintenance</h3><p>Reliable repair and maintenance for home electrical and furniture needs.</p></div>
-</div></div></section>
 
-<section><h2>Why Choose Us</h2><p class="sub">Built around quality and customer satisfaction.</p><div class="features">
-<div class="feature">✓ Experienced Team</div><div class="feature">✓ Quality Workmanship</div><div class="feature">✓ Professional Service</div><div class="feature">✓ Transparent Communication</div><div class="feature">✓ On-Time Work</div><div class="feature">✓ Customer Satisfaction</div>
-</div></section>
 
-<section id="quote" class="contact"><h2>Get a Free Quote</h2><p class="sub">Tell us about your project and we'll contact you.</p>
-<form onsubmit="sendWhatsApp(event)">
-<label>Name</label><input id="name" required>
-<label>Mobile Number</label><input id="phone" type="tel" required>
-<label>Location / Area</label><input id="location" required>
-<label>Service Required</label><select id="service"><option>Electrical Wiring</option><option>Electrical Installation</option><option>Furniture Work</option><option>Sliding Furniture</option><option>Interior Work</option><option>Home Renovation</option><option>Repair & Maintenance</option><option>Other</option></select>
-<label>Project Details</label><textarea id="details" placeholder="Describe your requirement"></textarea>
+<div class="card">
+<div class="card-icon">🪑</div>
+<h3>Furniture Work</h3>
+<p>
+Customized furniture for bedrooms,
+living rooms, offices and other spaces.
+</p>
+</div>
 
-<div class="card"><h3>WhatsApp 2</h3><p><a href="https://wa.me/919889784730">9889784730</a></p></div>
-<div class="card"><h3>Service Area</h3><p>Kanpur, Kanpur Nagar, Kanpur Dehat and nearby areas.</p></div>
-</div></section>
-</main>
 
-<footer><strong>INDRA HOME SOLUTIONS</strong><br>Complete Home Solutions Under One Roof<br><small>© 2026 INDRA HOME SOLUTIONS. All Rights Reserved.</small></footer>
+<div class="card">
+<div class="card-icon">🚪</div>
+<h3>Sliding Furniture</h3>
+<p>
+Sliding wardrobes, cabinets and
+space-saving furniture solutions.
+</p>
+</div>
 
-<a href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS%2C%20I%20need%20a%20quotation." style="position:fixed;right:18px;bottom:18px;background:#25d366;color:white;padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 18px #0004">WhatsApp</a>
+
+<div class="card">
+<div class="card-icon">🍳</div>
+<h3>Modular Kitchen</h3>
+<p>
+Modern and practical modular kitchen
+solutions according to available space.
+</p>
+</div>
+
+
+<div class="card">
+<div class="card-icon">⚡</div>
+<h3>House Electrical Wiring</h3>
+<p>
+Electrical wiring solutions for
+construction and renovation projects.
+</p>
+</div>
+
+
+<div class="card">
+<div class="card-icon">💡</div>
+<h3>Electrical Installation</h3>
+<p>
+Lights, fans, switches, sockets and
+selected electrical installations.
+</p>
+</div>
+
+
+<div class="card">
+<div class="card-icon">🏠</div>
+<h3>Interior Work</h3>
+<p>
+Practical and stylish interior
+improvement solutions.
+</p>
+</div>
+
+
+<div class="card">
+<div class="card-icon">🪟</div>
+<h3>Doors & Windows</h3>
+<p>
+Modern doors and windows for home
+improvement requirements.
+</p>
+</div>
+
+
+<div class="card">
+<div class="card-icon">🔧</div>
+<h3>Repair & Maintenance</h3>
+<p>
+Selected repair and maintenance
+services for home requirements.
+</p>
+</div>
+
+
+<div class="card">
+<div class="card-icon">🏗️</div>
+<h3>Home Projects</h3>
+<p>
+Support for selected furniture,
+electrical and interior projects.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Why Choose Us
+</h2>
+
+<p>
+Customer-focused home solutions
+</p>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+<span class="feature-icon">👷</span>
+Experienced Team
+</div>
+
+
+<div class="feature">
+<span class="feature-icon">⭐</span>
+Quality Workmanship
+</div>
+
+
+<div class="feature">
+<span class="feature-icon">🤝</span>
+Professional Service
+</div>
+
+
+<div class="feature">
+<span class="feature-icon">💬</span>
+Clear Communication
+</div>
+
+
+<div class="feature">
+<span class="feature-icon">⏱️</span>
+Timely Work
+</div>
+
+
+<div class="feature">
+<span class="feature-icon">❤️</span>
+Customer Satisfaction
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+
+<div class="stat">
+<h3 data-target="100">0+</h3>
+<p>Projects</p>
+</div>
+
+
+<div class="stat">
+<h3 data-target="50">0+</h3>
+<p>Happy Clients</p>
+</div>
+
+
+<div class="stat">
+<h3 data-target="9">0+</h3>
+<p>Services</p>
+</div>
+
+
+<div class="stat">
+<h3 data-target="5">0+</h3>
+<p>Years Experience</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section
+class="gallery-section"
+id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Project Gallery
+</h2>
+
+<p>
+Furniture, kitchen, interior and completed work
+</p>
+
+</div>
+
+
+<!-- UPLOAD AREA -->
+
+<div class="upload-box">
+
+<h3>
+📸 Add Your Project Photos
+</h3>
+
+<p>
+Select photos from your mobile or computer.
+You can add multiple photos at once.
+</p>
+
+<label
+for="photoUpload"
+class="upload-label">
+
+➕ UPLOAD PHOTOS
+
+</label>
+
+<input
+type="file"
+id="photoUpload"
+class="file-input"
+accept="image/*"
+multiple
+onchange="uploadPhotos(event)">
+
+</div>
+
+
+<!-- FILTER -->
+
+<div class="gallery-tools">
+
+<button
+class="filter-btn active"
+onclick="filterGallery('all',this)">
+All
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('furniture',this)">
+Furniture
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('kitchen',this)">
+Kitchen
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('interior',this)">
+Interior
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('electrical',this)">
+Electrical
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('uploaded',this)">
+My Uploaded Photos
+</button>
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div
+class="gallery"
+id="galleryContainer">
+
+
+<!-- DEFAULT PHOTO 1 -->
+
+<div
+class="gallery-item"
+data-category="furniture"
+onclick="openImage(this)">
+
+<img
+src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=85"
+alt="Furniture Work">
+
+<div class="gallery-overlay">
+<strong>Modern Furniture</strong>
+Small project example
+</div>
+
+</div>
+
+
+<!-- DEFAULT PHOTO 2 -->
+
+<div
+class="gallery-item"
+data-category="furniture"
+onclick="openImage(this)">
+
+<img
+src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85"
+alt="Sliding Wardrobe">
+
+<div class="gallery-overlay">
+<strong>Sliding Wardrobe</strong>
+Furniture project
+</div>
+
+</div>
+
+
+<!-- DEFAULT PHOTO 3 -->
+
+<div
+class="gallery-item"
+data-category="kitchen"
+onclick="openImage(this)">
+
+<img
+src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1000&q=85"
+alt="Modular Kitchen">
+
+<div class="gallery-overlay">
+<strong>Modular Kitchen</strong>
+Kitchen project
+</div>
+
+</div>
+
+
+<!-- DEFAULT PHOTO 4 -->
+
+<div
+class="gallery-item"
+data-category="interior"
+onclick="openImage(this)">
+
+<img
+src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=85"
+alt="Interior Work">
+
+<div class="gallery-overlay">
+<strong>Home Interior</strong>
+Interior project
+</div>
+
+</div>
+
+
+<!-- DEFAULT PHOTO 5 -->
+
+<div
+class="gallery-item"
+data-category="furniture"
+onclick="openImage(this)">
+
+<img
+src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+alt="Home Furniture">
+
+<div class="gallery-overlay">
+<strong>Home Furniture</strong>
+Furniture project
+</div>
+
+</div>
+
+
+<!-- DEFAULT PHOTO 6 -->
+
+<div
+class="gallery-item"
+data-category="interior"
+onclick="openImage(this)">
+
+<img
+src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85"
+alt="Interior Design">
+
+<div class="gallery-overlay">
+<strong>Interior Design</strong>
+Home project
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ESTIMATE CALCULATOR
+===================================================== -->
+
+<section
+class="calculator-section"
+id="estimate">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Quick Estimate
+</h2>
+
+<p>
+Get an approximate calculation
+</p>
+
+</div>
+
+
+<div class="calculator">
+
+
+<div class="form-group">
+
+<label>
+Select Service
+</label>
+
+<select id="estimateService">
+
+<option value="0">
+Select Service
+</option>
+
+<option value="1200">
+Furniture Work
+</option>
+
+<option value="1500">
+Sliding Furniture
+</option>
+
+<option value="1800">
+Modular Kitchen
+</option>
+
+<option value="1000">
+Interior Work
+</option>
+
+<option value="500">
+Electrical Work
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Approximate Area (sq.ft.)
+</label>
+
+<input
+type="number"
+id="area"
+min="1"
+placeholder="Example: 100">
+
+</div>
+
+
+<button
+class="btn gold"
+onclick="calculateEstimate()">
+
+CALCULATE
+
+</button>
+
+
+<div class="total-box">
+
+<p>
+Approximate Estimate
+</p>
+
+<h3 id="total">
+₹0
+</h3>
+
+<small>
+Final price depends on material,
+design, size and project requirements.
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     REVIEWS
+===================================================== -->
+
+<section id="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Customer Reviews
+</h2>
+
+<p>
+Customer feedback
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+Good furniture work and professional
+communication.
+</p>
+
+<br>
+
+<strong>
+— Customer
+</strong>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+Good response and satisfactory
+home service.
+</p>
+
+<br>
+
+<strong>
+— Customer
+</strong>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+Good option for furniture and
+home project work in Kanpur.
+</p>
+
+<br>
+
+<strong>
+— Customer
+</strong>
+
+</div>
+
+
+</div>
+
+
+<center style="margin-top:30px">
+
+<a
+href="https://g.page/r/CcwpTgazpF3VECE/review"
+target="_blank"
+class="btn gold">
+
+⭐ GIVE YOUR REVIEW
+
+</a>
+
+</center>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<p>
+Common customer questions
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<div class="faq-item">
+
+<div
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>
+Do you provide customized furniture?
+</span>
+
+<span class="faq-icon">
++
+</span>
+
+</div>
+
+<div class="faq-answer">
+
+Yes. Customized furniture requirements
+can be discussed according to space,
+design and customer requirements.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>
+Do you provide electrical wiring?
+</span>
+
+<span class="faq-icon">
++
+</span>
+
+</div>
+
+<div class="faq-answer">
+
+Electrical wiring and selected
+electrical installation services
+are available.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>
+How can I get a quotation?
+</span>
+
+<span class="faq-icon">
++
+</span>
+
+</div>
+
+<div class="faq-answer">
+
+Send your requirement through
+the quotation form or contact us
+directly on WhatsApp.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>
+Do you provide modular kitchen work?
+</span>
+
+<span class="faq-icon">
++
+</span>
+
+</div>
+
+<div class="faq-answer">
+
+Yes. Modular kitchen requirements
+can be discussed according to
+available space and design.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>
+Which areas do you serve?
+</span>
+
+<span class="faq-icon">
++
+</span>
+
+</div>
+
+<div class="faq-answer">
+
+We focus on Kanpur and nearby areas.
+Please contact us to confirm service
+availability for your location.
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUOTE FORM
+===================================================== -->
+
+<section
+class="quote-section"
+id="quote">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Get a Free Quote
+</h2>
+
+<p>
+Send your requirement directly on WhatsApp
+</p>
+
+</div>
+
+
+<form
+class="quote-form"
+onsubmit="sendQuote(event)">
+
+
+<div class="form-group">
+
+<label>
+Your Name
+</label>
+
+<input
+id="name"
+required
+placeholder="Enter your name">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Mobile Number
+</label>
+
+<input
+id="phone"
+type="tel"
+required
+placeholder="Enter mobile number">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Location / Area
+</label>
+
+<input
+id="location"
+required
+placeholder="Example: Naubasta, Kanpur">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Service Required
+</label>
+
+<select id="service">
+
+<option>Furniture Work</option>
+<option>Sliding Furniture</option>
+<option>Modular Kitchen</option>
+<option>Electrical Wiring</option>
+<option>Electrical Installation</option>
+<option>Interior Work</option>
+<option>Doors & Windows</option>
+<option>Repair & Maintenance</option>
+<option>Home Project</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Project Details
+</label>
+
+<textarea
+id="details"
+placeholder="Describe your requirement">
+</textarea>
+
+</div>
+
+
+<button
+class="btn green"
+type="submit">
+
+💬 SEND QUOTE ON WHATSAPP
+
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Contact Us
+</h2>
+
+<p>
+Kanpur and nearby areas
+</p>
+
+</div>
+
+
+<div class="contact-info">
+
+
+<div class="contact-number">
+📱 7007115735
+</div>
+
+
+<div class="contact-number">
+📱 9889784730
+</div>
+
+
+<br><br>
+
+
+<a
+href="https://wa.me/917007115735"
+target="_blank"
+class="btn green">
+
+WhatsApp 7007115735
+
+</a>
+
+
+<a
+href="https://wa.me/919889784730"
+target="_blank"
+class="btn green">
+
+WhatsApp 9889784730
+
+</a>
+
+
+<a
+href="tel:+917007115735"
+class="btn blue">
+
+📞 Call 7007115735
+
+</a>
+
+
+<a
+href="tel:+919889784730"
+class="btn blue">
+
+📞 Call 9889784730
+
+</a>
+
+
+</div>
+
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=58%2F67%20Dalanpur%20Naubasta%20Kanpur%20Uttar%20Pradesh%20208021&output=embed"
+loading="lazy">
+</iframe>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<strong>
+INDRA HOME SOLUTIONS
+</strong>
+
+<br>
+
+Complete Home Solutions Under One Roof
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#estimate">Estimate</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<p>
+📍 58/67, Dalanpur, Naubasta,
+Kanpur, Uttar Pradesh 208021
+</p>
+
+<p style="margin-top:8px;font-size:13px">
+Owner / Proprietor: Ram Milan
+</p>
+
+<br>
+
+<small>
+© 2026 INDRA HOME SOLUTIONS.
+All Rights Reserved.
+</small>
+
+</footer>
+
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<div class="whatsapp-floating">
+
+
+<a
+href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20I%20need%20a%20quotation."
+target="_blank"
+class="wa-button">
+
+💬 7007115735
+
+</a>
+
+
+<a
+href="https://wa.me/919889784730?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20I%20need%20a%20quotation."
+target="_blank"
+class="wa-button">
+
+💬 9889784730
+
+</a>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     TOP BUTTON
+===================================================== -->
+
+<button
+class="top-button"
+id="topButton"
+onclick="goTop()">
+
+↑
+
+</button>
+
+
+
+<!-- =====================================================
+     IMAGE MODAL
+===================================================== -->
+
+<div
+class="modal"
+id="imageModal"
+onclick="closeImage(event)">
+
+<span
+class="modal-close"
+onclick="closeModalOnly(event)">
+×
+</span>
+
+<img
+id="modalImage"
+class="modal-image"
+src=""
+alt="Gallery Preview">
+
+</div>
+
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+class="toast"
+id="toast">
+
+Done!
+
+</div>
+
+
 
 <script>
-function sendWhatsApp(e){
- e.preventDefault();
- const msg=`Hello INDRA HOME SOLUTIONS, I need a quotation.%0A%0AName: ${encodeURIComponent(document.getElementById('name').value)}%0AMobile: ${encodeURIComponent(document.getElementById('phone').value)}%0ALocation: ${encodeURIComponent(document.getElementById('location').value)}%0AService: ${encodeURIComponent(document.getElementById('service').value)}%0ADetails: ${encodeURIComponent(document.getElementById('details').value)}`;
- window.open('https://wa.me/917007115735?text='+msg,'_blank');
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu(){
+
+const menu =
+document.getElementById("navLinks");
+
+menu.classList.toggle("show");
+
 }
+
+
+/* =========================================================
+   CLOSE MOBILE MENU
+========================================================= */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.getElementById("navLinks")
+.classList.remove("show");
+
+});
+
+});
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+function toggleDark(){
+
+document
+.body
+.classList
+.toggle("dark");
+
+localStorage.setItem(
+"indraDarkMode",
+document.body.classList.contains("dark")
+);
+
+}
+
+if(
+localStorage.getItem("indraDarkMode")==="true"
+){
+
+document.body.classList.add("dark");
+
+}
+
+
+/* =========================================================
+   GALLERY FILTER
+========================================================= */
+
+function filterGallery(category,button){
+
+const items =
+document.querySelectorAll(".gallery-item");
+
+document
+.querySelectorAll(".gallery-tools .filter-btn")
+.forEach(function(btn){
+
+btn.classList.remove("active");
+
+});
+
+button.classList.add("active");
+
+items.forEach(function(item){
+
+const itemCategory =
+item.dataset.category;
+
+if(
+category === "all" ||
+itemCategory === category
+){
+
+item.style.display="block";
+
+}else{
+
+item.style.display="none";
+
+}
+
+});
+
+}
+
+
+/* =========================================================
+   GALLERY IMAGE MODAL
+========================================================= */
+
+function openImage(element){
+
+const img =
+element.querySelector("img");
+
+if(!img){
+return;
+}
+
+document
+.getElementById("modalImage")
+.src=img.src;
+
+document
+.getElementById("imageModal")
+.classList.add("show");
+
+}
+
+
+function closeImage(event){
+
+if(
+event.target.id === "imageModal"
+){
+
+document
+.getElementById("imageModal")
+.classList.remove("show");
+
+}
+
+}
+
+
+function closeModalOnly(event){
+
+event.stopPropagation();
+
+document
+.getElementById("imageModal")
+.classList.remove("show");
+
+}
+
+
+/* =========================================================
+   USER PHOTO UPLOAD
+========================================================= */
+
+function uploadPhotos(event){
+
+const files =
+Array.from(event.target.files);
+
+if(files.length === 0){
+return;
+}
+
+let saved =
+JSON.parse(
+localStorage.getItem("indraUploadedPhotos") || "[]"
+);
+
+let processed=0;
+
+files.forEach(function(file){
+
+if(!file.type.startsWith("image/")){
+return;
+}
+
+const reader =
+new FileReader();
+
+reader.onload=function(e){
+
+const photo={
+
+id:
+Date.now()+"-"+Math.random(),
+
+name:file.name,
+
+src:e.target.result,
+
+category:"uploaded",
+
+caption:"My Project Photo"
+
+};
+
+saved.push(photo);
+
+processed++;
+
+if(processed === files.length){
+
+try{
+
+localStorage.setItem(
+"indraUploadedPhotos",
+JSON.stringify(saved)
+);
+
+loadUploadedPhotos();
+
+showToast(
+"Photos added to your gallery"
+);
+
+}catch(error){
+
+showToast(
+"Storage full. Try fewer/smaller photos."
+);
+
+}
+
+}
+
+};
+
+reader.readAsDataURL(file);
+
+});
+
+
+event.target.value="";
+
+}
+
+
+/* =========================================================
+   LOAD USER PHOTOS
+========================================================= */
+
+function loadUploadedPhotos(){
+
+const saved =
+JSON.parse(
+localStorage.getItem("indraUploadedPhotos") || "[]"
+);
+
+const gallery =
+document.getElementById("galleryContainer");
+
+
+document
+.querySelectorAll(".user-uploaded")
+.forEach(function(item){
+
+item.remove();
+
+});
+
+
+saved.forEach(function(photo){
+
+const item =
+document.createElement("div");
+
+item.className=
+"gallery-item user-uploaded";
+
+item.dataset.category="uploaded";
+
+item.innerHTML=`
+
+<button
+class="gallery-delete"
+title="Delete photo"
+onclick="deletePhoto(event,'${photo.id}')">
+×
+</button>
+
+<img
+src="${photo.src}"
+alt="${escapeHTML(photo.name)}">
+
+<div class="gallery-overlay">
+
+<strong>
+${escapeHTML(photo.caption)}
+</strong>
+
+<small>
+Uploaded Photo
+</small>
+
+</div>
+`;
+
+item.addEventListener(
+"click",
+function(event){
+
+if(
+event.target.classList.contains(
+"gallery-delete"
+)
+){
+return;
+}
+
+openImage(item);
+
+});
+
+gallery.appendChild(item);
+
+});
+
+}
+
+
+/* =========================================================
+   DELETE USER PHOTO
+========================================================= */
+
+function deletePhoto(event,id){
+
+event.stopPropagation();
+
+const confirmDelete =
+confirm(
+"Delete this photo from your gallery?"
+);
+
+if(!confirmDelete){
+return;
+}
+
+let saved =
+JSON.parse(
+localStorage.getItem("indraUploadedPhotos") || "[]"
+);
+
+saved =
+saved.filter(function(photo){
+
+return photo.id !== id;
+
+});
+
+localStorage.setItem(
+"indraUploadedPhotos",
+JSON.stringify(saved)
+);
+
+loadUploadedPhotos();
+
+showToast("Photo deleted");
+
+}
+
+
+/* =========================================================
+   SAFE TEXT
+========================================================= */
+
+function escapeHTML(text){
+
+return String(text)
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;")
+.replace(/"/g,"&quot;")
+.replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================================
+   CALCULATOR
+========================================================= */
+
+function calculateEstimate(){
+
+const rate =
+Number(
+document
+.getElementById("estimateService")
+.value
+);
+
+const area =
+Number(
+document
+.getElementById("area")
+.value
+);
+
+if(rate <= 0 || area <= 0){
+
+showToast(
+"Please select service and enter area"
+);
+
+return;
+
+}
+
+const total =
+rate * area;
+
+document
+.getElementById("total")
+.innerText =
+"₹"+total.toLocaleString("en-IN");
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+function toggleFAQ(element){
+
+const answer =
+element.nextElementSibling;
+
+const icon =
+element.querySelector(".faq-icon");
+
+if(
+answer.style.display === "block"
+){
+
+answer.style.display="none";
+
+icon.innerText="+";
+
+}else{
+
+answer.style.display="block";
+
+icon.innerText="−";
+
+}
+
+}
+
+
+/* =========================================================
+   WHATSAPP QUOTE
+========================================================= */
+
+function sendQuote(event){
+
+event.preventDefault();
+
+
+const name =
+document.getElementById("name").value;
+
+const phone =
+document.getElementById("phone").value;
+
+const location =
+document.getElementById("location").value;
+
+const service =
+document.getElementById("service").value;
+
+const details =
+document.getElementById("details").value;
+
+
+const message =
+"Hello INDRA HOME SOLUTIONS,%0A%0A"+
+"Name: "+
+encodeURIComponent(name)+
+"%0A"+
+"Mobile: "+
+encodeURIComponent(phone)+
+"%0A"+
+"Location: "+
+encodeURIComponent(location)+
+"%0A"+
+"Service: "+
+encodeURIComponent(service)+
+"%0A"+
+"Project Details: "+
+encodeURIComponent(details);
+
+
+window.open(
+"https://wa.me/917007115735?text="+message,
+"_blank"
+);
+
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+window.addEventListener(
+"scroll",
+function(){
+
+const btn =
+document.getElementById("topButton");
+
+if(window.scrollY > 400){
+
+btn.style.display="block";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+});
+
+
+function goTop(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+/* =========================================================
+   COUNTER ANIMATION
+========================================================= */
+
+let counterStarted=false;
+
+function startCounters(){
+
+if(counterStarted){
+return;
+}
+
+if(window.scrollY > 350){
+
+counterStarted=true;
+
+document
+.querySelectorAll(".stat h3")
+.forEach(function(counter){
+
+const target =
+Number(
+counter.dataset.target
+);
+
+let count=0;
+
+const timer =
+setInterval(function(){
+
+count++;
+
+counter.innerText =
+count+"+";
+
+if(count >= target){
+
+clearInterval(timer);
+
+}
+
+},20);
+
+});
+
+}
+
+}
+
+window.addEventListener(
+"scroll",
+startCounters
+);
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function showToast(message){
+
+const toast =
+document.getElementById("toast");
+
+toast.innerText=message;
+
+toast.classList.add("show");
+
+setTimeout(function(){
+
+toast.classList.remove("show");
+
+},2500);
+
+}
+
+
+/* =========================================================
+   ESC KEY
+========================================================= */
+
+document.addEventListener(
+"keydown",
+function(event){
+
+if(event.key === "Escape"){
+
+document
+.getElementById("imageModal")
+.classList.remove("show");
+
+}
+
+});
+
+
+/* =========================================================
+   LOAD PHOTOS ON START
+========================================================= */
+
+window.addEventListener(
+"DOMContentLoaded",
+function(){
+
+loadUploadedPhotos();
+
+});
+
 </script>
-</body></html>
+
+</body>
+</html>
+
