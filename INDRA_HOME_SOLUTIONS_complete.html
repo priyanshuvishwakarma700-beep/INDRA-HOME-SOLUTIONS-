@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INDRA HOME SOLUTIONS | Furniture & Home Solutions</title>
+<meta name="description" content="INDRA HOME SOLUTIONS provides furniture, sliding furniture, modular kitchen, electrical and interior work across Uttar Pradesh.">
+<style>
+:root{--bg:#101010;--card:#181818;--gold:#d6a84f;--text:#f5f5f5;--muted:#bdbdbd;--line:#333;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1150px,92%);margin:auto}
+header{position:sticky;top:0;z-index:1000;background:rgba(16,16,16,.96);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:800;color:var(--gold);letter-spacing:.5px}
+nav{display:flex;gap:20px}
+nav a{font-size:14px;color:#ddd}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #555;color:#fff;padding:8px 11px;border-radius:8px}
+.hero{min-height:680px;display:flex;align-items:center;background:radial-gradient(circle at 80% 30%,#493516 0,#17130d 20%,#101010 52%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.badge{display:inline-block;border:1px solid #6d5526;color:var(--gold);padding:7px 14px;border-radius:30px;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:20px}
+h1 span{color:var(--gold)}
+.hero p{color:var(--muted);font-size:18px;max-width:650px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:13px 20px;border-radius:9px;font-weight:700;border:1px solid var(--gold)}
+.btn.primary{background:var(--gold);color:#111}
+.btn.secondary{color:#fff}
+.hero-card{background:linear-gradient(145deg,#242424,#111);border:1px solid #3b3b3b;border-radius:22px;padding:30px;box-shadow:0 20px 60px #0008}
+.hero-card h3{color:var(--gold);font-size:25px;margin-bottom:15px}
+.hero-card ul{list-style:none}
+.hero-card li{padding:12px 0;border-bottom:1px solid #333;color:#ddd}
+section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:38px;margin-bottom:10px}
+.section-title p{color:var(--muted);max-width:700px;margin:auto}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px}
+.box h3{color:var(--gold);margin-bottom:15px;font-size:25px}
+.box p{color:#ccc;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:25px}
+.stat{text-align:center;background:#151515;border:1px solid var(--line);padding:22px;border-radius:14px}
+.stat strong{display:block;color:var(--gold);font-size:30px}
+.stat span{font-size:13px;color:#aaa}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:18px;transition:.25s}
+.service:hover{transform:translateY(-5px);border-color:var(--gold)}
+.icon{font-size:35px;margin-bottom:15px}
+.service h3{margin-bottom:10px;color:var(--gold)}
+.service p{color:#aaa}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:#171717;border:1px solid var(--line);border-radius:15px;padding:25px}
+.step b{display:inline-flex;width:38px;height:38px;border-radius:50%;align-items:center;justify-content:center;background:var(--gold);color:#111;margin-bottom:14px}
+.step h3{margin-bottom:8px}
+.step p{color:#aaa;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:15px;border:1px solid #333}
+.quote{background:linear-gradient(135deg,#241c0e,#151515);border:1px solid #5c4824;border-radius:22px;padding:40px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+input,select,textarea{width:100%;background:#101010;border:1px solid #444;color:#fff;padding:14px;border-radius:9px;font-size:15px}
+textarea{min-height:130px;resize:vertical}
+.full{grid-column:1/-1}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-item{padding:18px 0;border-bottom:1px solid #333}
+.contact-item strong{display:block;color:var(--gold);margin-bottom:5px}
+.faq{max-width:850px;margin:auto}
+details{background:#171717;border:1px solid #333;border-radius:12px;margin-bottom:12px;padding:18px}
+summary{cursor:pointer;font-weight:700}
+details p{color:#aaa;padding-top:12px}
+footer{padding:35px 0;border-top:1px solid #333;color:#999;text-align:center}
+.float{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;z-index:1000;box-shadow:0 8px 25px #0008}
+@media(max-width:850px){
+nav{display:none;position:absolute;left:0;right:0;top:72px;background:#111;flex-direction:column;padding:20px;border-bottom:1px solid #333}
+nav.show{display:flex}.menu{display:block}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:550px){
+section{padding:65px 0}.hero{min-height:auto;padding:80px 0}.services,.steps,.gallery,.stats,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.hero-card{padding:22px}h1{font-size:43px}.section-title h2{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a href="#home" class="logo">INDRA HOME SOLUTIONS</a>
+<button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="nav">
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#gallery">Gallery</a><a href="#estimate">Estimate</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="badge">SINCE 1998 • WORKING ACROSS UTTAR PRADESH</div>
+<h1>Complete <span>Home Solutions</span> Under One Roof</h1>
+<p>INDRA HOME SOLUTIONS provides furniture, sliding furniture, modular kitchen, electrical and interior project services with coordinated execution and local work teams.</p>
+<div class="buttons">
+<a class="btn primary" href="#estimate">Get Estimate</a>
+<a class="btn secondary" href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS%2C%20I%20want%20a%20quotation." target="_blank">WhatsApp</a>
+<a class="btn secondary" href="tel:+917007115735">Call Now</a>
+</div>
+</div>
+<div class="hero-card">
+<h3>Our Main Focus</h3>
+<ul>
+<li>✓ Furniture Contract & Project Work</li>
+<li>✓ Sliding Wardrobe & Storage</li>
+<li>✓ Modular Kitchen</li>
+<li>✓ Doors, Windows & Woodwork</li>
+<li>✓ Electrical & Interior Work</li>
+<li>✓ Site Measurement & Quotation</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-title"><h2>About INDRA HOME SOLUTIONS</h2><p>A practical project-focused home solution business with furniture as the priority.</p></div>
+<div class="about-grid">
+<div class="box">
+<h3>Our Journey</h3>
+<p>INDRA HOME SOLUTIONS has been working since 1998 and is working across Uttar Pradesh. Our primary focus is furniture work and complete project coordination.</p>
+<p>We coordinate customers, measurements, materials, local execution teams and project requirements so that the customer can get a single point of communication for the work.</p>
+<p>Our team network includes more than 50 workers associated with different work requirements.</p>
+</div>
+<div class="box">
+<h3>Owner / Proprietor</h3>
+<p><strong style="color:#fff;font-size:22px">Ram Milan</strong></p>
+<p>Our work is built around practical field experience, furniture execution and coordination with skilled workers and contractors.</p>
+<p>For every project, the actual quotation can depend on size, design, material, hardware, finish, transportation, installation and site conditions.</p>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><strong>1998</strong><span>Working Since</span></div>
+<div class="stat"><strong>50+</strong><span>Workers Network</span></div>
+<div class="stat"><strong>UP</strong><span>Service Area</span></div>
+<div class="stat"><strong>1</strong><span>Project Coordination Point</span></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-title"><h2>Our Services</h2><p>Furniture is our priority, with additional home and project services available according to requirement.</p></div>
+<div class="services">
+<div class="service"><div class="icon">🪑</div><h3>Furniture Work</h3><p>Custom furniture, room furniture, storage units and contract-based furniture projects.</p></div>
+<div class="service"><div class="icon">🚪</div><h3>Sliding Furniture</h3><p>Sliding wardrobes, storage systems and space-saving furniture solutions.</p></div>
+<div class="service"><div class="icon">🍳</div><h3>Modular Kitchen</h3><p>Kitchen cabinets, storage planning, shutters, hardware and installation coordination.</p></div>
+<div class="service"><div class="icon">📺</div><h3>TV Unit & Wall Furniture</h3><p>Modern TV units, wall panels, display shelves and custom storage.</p></div>
+<div class="service"><div class="icon">🧰</div><h3>Doors & Windows</h3><p>Furniture-related doors, windows and woodwork according to project requirements.</p></div>
+<div class="service"><div class="icon">💡</div><h3>Electrical Work</h3><p>House wiring, electrical installation and related coordination through workers.</p></div>
+<div class="service"><div class="icon">🏠</div><h3>Interior Work</h3><p>Selected interior and finishing work coordinated according to the project scope.</p></div>
+<div class="service"><div class="icon">🏢</div><h3>Office Furniture</h3><p>Tables, storage, workstations and other furniture requirements for offices.</p></div>
+<div class="service"><div class="icon">🔧</div><h3>Repair & Modification</h3><p>Selected furniture repair, modification and improvement work based on site condition.</p></div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="container">
+<div class="section-title"><h2>How We Work</h2><p>From first enquiry to project handover, every step is coordinated clearly.</p></div>
+<div class="steps">
+<div class="step"><b>1</b><h3>Enquiry</h3><p>Tell us what furniture or home work you need and share basic project details.</p></div>
+<div class="step"><b>2</b><h3>Site & Measurement</h3><p>Measurement and site requirements are checked before preparing the final scope.</p></div>
+<div class="step"><b>3</b><h3>Quotation</h3><p>Material, design, quantity, labour and other applicable costs are discussed.</p></div>
+<div class="step"><b>4</b><h3>Execution</h3><p>Work is coordinated with the suitable team and checked during execution.</p></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<div class="section-title"><h2>Project Gallery</h2><p>Examples of furniture and home work styles. Replace these images with your actual projects.</p></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=900&q=80" alt="Modern kitchen">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Interior furniture">
+<img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=900&q=80" alt="Wood furniture">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Living room furniture">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Interior work">
+<img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80" alt="Furniture project">
+</div>
+</div>
+</section>
+
+<section id="estimate">
+<div class="container">
+<div class="section-title"><h2>Get an Estimate</h2><p>Use this form to send your project requirement directly on WhatsApp.</p></div>
+<div class="quote">
+<form id="quoteForm">
+<div class="form-grid">
+<input id="name" required placeholder="Your Name">
+<input id="phone" required placeholder="Mobile Number">
+<select id="service" required>
+<option value="">Select Service</option>
+<option>Furniture Work</option><option>Sliding Furniture</option><option>Modular Kitchen</option><option>TV Unit</option><option>Doors & Windows</option><option>Electrical Work</option><option>Interior Work</option><option>Office Furniture</option><option>Other</option>
+</select>
+<input id="location" placeholder="Project Location">
+<input id="area" placeholder="Approx. Area / Size">
+<input id="budget" placeholder="Approx. Budget (optional)">
+<textarea class="full" id="details" placeholder="Describe your requirement, design, material, quantity or any other details"></textarea>
+<div class="full"><button class="btn primary" type="submit">Send Requirement on WhatsApp</button></div>
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+<div class="section-title"><h2>Frequently Asked Questions</h2><p>Some common questions about our furniture and project services.</p></div>
+<div class="faq">
+<details><summary>Do you take complete furniture contracts?</summary><p>Yes. Furniture projects can be discussed as complete contract work depending on the scope, material and site requirements.</p></details>
+<details><summary>Do you provide site measurement?</summary><p>Site measurement can be coordinated for projects where physical measurement is required before quotation.</p></details>
+<details><summary>Do you work outside Kanpur?</summary><p>INDRA HOME SOLUTIONS is intended to work across Uttar Pradesh. Availability depends on project size, location and execution requirements.</p></details>
+<details><summary>Can I get a quotation before starting?</summary><p>Yes. A quotation can be prepared after understanding the project requirements. Final pricing may change if measurements, materials or specifications change.</p></details>
+<details><summary>Do you provide only furniture?</summary><p>Furniture is the priority. Other selected services such as electrical and interior work can also be coordinated according to the project.</p></details>
+<details><summary>How can I contact you?</summary><p>You can call or send your requirement on WhatsApp using the contact buttons on this website.</p></details>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact INDRA HOME SOLUTIONS</h2><p>Tell us about your furniture or home project.</p></div>
+<div class="contact-grid">
+<div class="box">
+<div class="contact-item"><strong>Owner / Proprietor</strong>Ram Milan</div>
+<div class="contact-item"><strong>Phone</strong><a href="tel:+917007115735">7007115735</a></div>
+<div class="contact-item"><strong>Alternate Phone</strong><a href="tel:+919889784730">9889784730</a></div>
+<div class="contact-item"><strong>Address</strong>58/67, Dalanpur, Naubasta, Kanpur, Uttar Pradesh 208021</div>
+<div class="buttons">
+<a class="btn primary" href="https://wa.me/917007115735" target="_blank">WhatsApp Us</a>
+<a class="btn secondary" href="https://g.page/r/CcwpTgazpF3VECE/review" target="_blank">Give Google Review</a>
+</div>
+</div>
+<div class="box">
+<h3>Why Choose a Single Project Coordinator?</h3>
+<p>Instead of managing separate people for every part of a project, customers can communicate their requirement at one point.</p>
+<p>We can coordinate measurement, quotation, material discussions, execution teams, installation and basic project follow-up according to the agreed scope.</p>
+<p>This model is especially useful for customers who want furniture work done without having to individually search for every worker.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p><strong style="color:#d6a84f">INDRA HOME SOLUTIONS</strong></p>
+<p>Furniture • Electrical • Interior • Home Solutions</p>
+<p>© <span id="year"></span> INDRA HOME SOLUTIONS. All Rights Reserved.</p>
+</div>
+</footer>
+
+<a class="float" href="https://wa.me/917007115735" target="_blank" aria-label="WhatsApp">☘</a>
+
+<script>
+function toggleMenu(){
+ document.getElementById('nav').classList.toggle('show');
+}
+document.querySelectorAll('#nav a').forEach(function(link){
+ link.addEventListener('click',function(){
+  document.getElementById('nav').classList.remove('show');
+ });
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ var name=document.getElementById('name').value.trim();
+ var phone=document.getElementById('phone').value.trim();
+ var service=document.getElementById('service').value;
+ var location=document.getElementById('location').value.trim();
+ var area=document.getElementById('area').value.trim();
+ var budget=document.getElementById('budget').value.trim();
+ var details=document.getElementById('details').value.trim();
+
+ var message=
+ 'Hello INDRA HOME SOLUTIONS,%0A%0A'+
+ 'I want a quotation.%0A%0A'+
+ 'Name: '+encodeURIComponent(name)+'%0A'+
+ 'Mobile: '+encodeURIComponent(phone)+'%0A'+
+ 'Service: '+encodeURIComponent(service)+'%0A'+
+ 'Project Location: '+encodeURIComponent(location)+'%0A'+
+ 'Area/Size: '+encodeURIComponent(area)+'%0A'+
+ 'Budget: '+encodeURIComponent(budget)+'%0A'+
+ 'Requirement: '+encodeURIComponent(details);
+
+ window.open('https://wa.me/917007115735?text='+message,'_blank');
+});
+</script>
+
+</body>
+</html>
