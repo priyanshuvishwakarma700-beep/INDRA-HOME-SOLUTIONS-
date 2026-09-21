@@ -1,1256 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="INDRA HOME SOLUTIONS - Furniture, Modular Kitchen, Interior Design, Wardrobe, TV Unit and Complete Home Solutions.">
+<meta name="theme-color" content="#111111">
+<title>INDRA HOME SOLUTIONS | Furniture & Interior</title>
 
+<style>
+:root{
+  --primary:#b8860b;
+  --primary2:#d6a52b;
+  --dark:#111;
+  --dark2:#1b1b1b;
+  --light:#f7f5f0;
+  --white:#fff;
+  --text:#222;
+  --muted:#666;
+  --border:#e5e5e5;
+  --shadow:0 15px 40px rgba(0,0,0,.10);
+  --radius:18px;
+}
 
-button{
-    cursor:pointer;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+button,input,textarea,select{
+  font:inherit;
 }
 
 .container{
-    width:100%;
-    max-width:1150px;
-    margin:auto;
-    padding:0 20px;
+  width:min(1180px,92%);
+  margin:auto;
 }
 
+.topbar{
+  background:#111;
+  color:#fff;
+  padding:8px 0;
+  font-size:14px;
+}
 
-/* =========================================================
-   HEADER
-========================================================= */
+.topbar .container{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
 
 header{
-    position:sticky;
-    top:0;
-    z-index:9999;
-    background:#080808;
-    border-bottom:2px solid #d4af57;
-    box-shadow:0 3px 18px rgba(0,0,0,.35);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(10px);
+  box-shadow:0 3px 20px rgba(0,0,0,.08);
 }
 
-.navbar{
-    max-width:1150px;
-    margin:auto;
-    min-height:72px;
-    padding:8px 20px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
 }
 
 .logo{
-    width:54px;
-    height:54px;
-    border-radius:50%;
-    object-fit:contain;
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:.5px;
 }
 
-.brand-text{
-    color:#d4af57;
-    font-size:20px;
-    font-weight:900;
-    letter-spacing:.5px;
+.logo span{
+  color:var(--primary);
 }
 
-.brand-text small{
-    display:block;
-    color:#fff;
-    font-size:9px;
-    letter-spacing:2px;
+.logo small{
+  display:block;
+  font-size:10px;
+  letter-spacing:3px;
+  color:#777;
 }
 
 .nav-links{
-    display:flex;
-    align-items:center;
-    gap:17px;
-    list-style:none;
+  display:flex;
+  align-items:center;
+  gap:22px;
 }
 
 .nav-links a{
-    color:#fff;
-    font-size:13px;
-    font-weight:bold;
-    transition:.3s;
+  font-size:14px;
+  font-weight:700;
+  transition:.3s;
 }
 
 .nav-links a:hover{
-    color:#d4af57;
+  color:var(--primary);
 }
 
-.menu-button{
-    display:none;
-    border:0;
-    background:none;
-    color:#fff;
-    font-size:30px;
+.nav-btn{
+  background:var(--dark);
+  color:#fff!important;
+  padding:11px 18px;
+  border-radius:30px;
 }
 
+.menu{
+  display:none;
+  border:0;
+  background:none;
+  font-size:28px;
+  cursor:pointer;
+}
 
-/* =========================================================
-   HERO
-========================================================= */
-
+/* HERO */
 .hero{
-    min-height:670px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-    color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(0,0,0,.88),
-        rgba(35,35,35,.68)
-    ),
-    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85");
-
-    background-size:cover;
-    background-position:center;
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.48),rgba(0,0,0,.18)),
+    url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  color:#fff;
 }
 
 .hero-content{
-    max-width:900px;
-    padding:50px 20px;
+  max-width:720px;
+  padding:80px 0;
 }
 
-.hero-badge{
-    display:inline-block;
-    border:1px solid #d4af57;
-    color:#d4af57;
-    padding:7px 16px;
-    border-radius:30px;
-    margin-bottom:18px;
-    font-size:13px;
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);
+  padding:8px 15px;
+  border-radius:30px;
+  font-size:13px;
+  margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:clamp(38px,7vw,70px);
-    line-height:1.1;
-    color:#e2bd61;
-    margin-bottom:20px;
+  font-size:clamp(42px,6vw,78px);
+  line-height:1.02;
+  margin-bottom:22px;
 }
 
-.hero h2{
-    font-size:clamp(21px,3vw,30px);
-    color:#fff;
-    margin-bottom:15px;
+.hero h1 span{
+  color:#e3b63d;
 }
 
 .hero p{
-    max-width:760px;
-    margin:0 auto 30px;
-    color:#eee;
-    font-size:19px;
+  font-size:19px;
+  max-width:650px;
+  color:#eee;
+  margin-bottom:30px;
 }
 
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:8px;
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
 .btn{
-    display:inline-block;
-    padding:13px 22px;
-    border-radius:8px;
-    border:1px solid #d4af57;
-    font-weight:bold;
-    transition:.25s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 24px;
+  border-radius:30px;
+  border:2px solid var(--primary);
+  font-weight:800;
+  cursor:pointer;
+  transition:.3s;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
+.btn-primary{
+  background:var(--primary);
+  color:#fff;
 }
 
-.gold{
-    background:#d4af57;
-    color:#111;
+.btn-primary:hover{
+  background:#996f05;
+  transform:translateY(-2px);
 }
 
-.black{
-    background:#111;
-    color:#fff;
+.btn-light{
+  background:#fff;
+  color:#111;
+  border-color:#fff;
 }
 
-.green{
-    background:#25d366;
-    border-color:#25d366;
-    color:#fff;
+/* TRUST */
+.trust{
+  margin-top:-45px;
+  position:relative;
+  z-index:5;
 }
 
-.blue{
-    background:#1769aa;
-    border-color:#1769aa;
-    color:#fff;
+.trust-grid{
+  background:#fff;
+  box-shadow:var(--shadow);
+  border-radius:20px;
+  padding:25px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
 }
 
+.trust-item{
+  text-align:center;
+  border-right:1px solid var(--border);
+}
 
-/* =========================================================
-   COMMON SECTIONS
-========================================================= */
+.trust-item:last-child{
+  border:0;
+}
 
+.trust-item strong{
+  display:block;
+  font-size:28px;
+  color:var(--primary);
+}
+
+.trust-item span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* SECTION */
 section{
-    padding:75px 20px;
+  padding:90px 0;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:42px;
+.section-head{
+  text-align:center;
+  max-width:750px;
+  margin:0 auto 45px;
 }
 
-.section-title h2{
-    font-size:38px;
-    color:#9a7428;
-    margin-bottom:8px;
+.eyebrow{
+  color:var(--primary);
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+  margin-bottom:8px;
 }
 
-.dark .section-title h2{
-    color:#e2bd61;
+.section-head h2{
+  font-size:clamp(30px,4vw,48px);
+  line-height:1.1;
+  margin-bottom:15px;
 }
 
-.section-title p{
-    color:#666;
+.section-head p{
+  color:var(--muted);
 }
 
-.dark .section-title p{
-    color:#bbb;
+/* FURNITURE PRIORITY */
+.furniture-section{
+  background:var(--light);
 }
 
+.furniture-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
 
-/* =========================================================
-   ABOUT
-========================================================= */
+.furniture-card{
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  transition:.35s;
+  position:relative;
+}
 
+.furniture-card:hover{
+  transform:translateY(-8px);
+  box-shadow:var(--shadow);
+}
+
+.furniture-card img{
+  height:230px;
+  object-fit:cover;
+}
+
+.furniture-content{
+  padding:20px;
+}
+
+.furniture-content h3{
+  margin-bottom:7px;
+}
+
+.furniture-content p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.view-link{
+  display:inline-block;
+  margin-top:12px;
+  color:var(--primary);
+  font-weight:800;
+  font-size:14px;
+}
+
+/* SERVICES */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.service{
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:27px;
+  background:#fff;
+  transition:.3s;
+}
+
+.service:hover{
+  border-color:var(--primary);
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+
+.icon{
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  background:#f8efd7;
+  font-size:27px;
+  margin-bottom:18px;
+}
+
+.service h3{
+  margin-bottom:8px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ABOUT */
 .about{
-    background:#111;
-    color:#fff;
+  background:#111;
+  color:#fff;
 }
 
-.about-content{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
 }
 
-.about h2{
-    color:#d4af57;
-    font-size:38px;
-    margin-bottom:20px;
+.about-image{
+  border-radius:25px;
+  overflow:hidden;
+}
+
+.about-image img{
+  height:500px;
+  object-fit:cover;
 }
 
 .about p{
-    color:#ddd;
-    font-size:17px;
+  color:#ccc;
+  margin:15px 0;
 }
 
-.owner-name{
-    margin-top:22px;
-    font-size:13px;
-    color:#aaa;
+.check-list{
+  list-style:none;
+  margin:25px 0;
 }
 
-.owner-name strong{
-    color:#d4af57;
-    font-size:15px;
+.check-list li{
+  margin:12px 0;
 }
 
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.services-section{
-    background:#f2f2f2;
+.check-list li::before{
+  content:"✓";
+  color:#e0af2e;
+  font-weight:900;
+  margin-right:10px;
 }
 
-.dark .services-section{
-    background:#191919;
+/* ROOMS */
+.rooms{
+  background:#f7f5f0;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
-    gap:22px;
+.rooms-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
 }
 
-.card{
-    background:#fff;
-    padding:27px;
-    border-radius:15px;
-    border:1px solid #ddd;
-    box-shadow:0 7px 25px rgba(0,0,0,.06);
-    transition:.3s;
+.room{
+  position:relative;
+  height:260px;
+  border-radius:20px;
+  overflow:hidden;
 }
 
-.dark .card{
-    background:#202020;
-    border-color:#333;
+.room img{
+  height:100%;
+  object-fit:cover;
+  transition:.5s;
 }
 
-.card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 14px 35px rgba(0,0,0,.14);
+.room:hover img{
+  transform:scale(1.08);
 }
 
-.card-icon{
-    font-size:42px;
-    margin-bottom:10px;
+.room-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  padding:25px;
+  background:linear-gradient(transparent,rgba(0,0,0,.8));
+  color:#fff;
 }
 
-.card h3{
-    color:#9a7428;
-    margin-bottom:9px;
+.room-overlay h3{
+  font-size:24px;
 }
 
-.card p{
-    color:#666;
-}
-
-.dark .card p{
-    color:#ccc;
-}
-
-
-/* =========================================================
-   WHY US
-========================================================= */
-
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:18px;
-}
-
-.feature{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:13px;
-    padding:25px 15px;
-    text-align:center;
-    font-weight:bold;
-}
-
-.dark .feature{
-    background:#202020;
-    border-color:#333;
-}
-
-.feature-icon{
-    display:block;
-    font-size:34px;
-    margin-bottom:7px;
-}
-
-
-/* =========================================================
-   STATS
-========================================================= */
-
+/* STATS */
 .stats{
-    background:#090909;
-    color:#fff;
+  background:var(--primary);
+  color:#fff;
 }
 
 .stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    text-align:center;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  text-align:center;
+  gap:20px;
 }
 
-.stat h3{
-    color:#d4af57;
-    font-size:45px;
+.stat strong{
+  display:block;
+  font-size:42px;
 }
 
-.stat p{
-    color:#ddd;
+.stat span{
+  font-size:14px;
 }
 
-
-/* =========================================================
-   GALLERY
-========================================================= */
-
-.gallery-section{
-    background:#fff;
+/* GALLERY */
+.filters{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
 }
 
-.dark .gallery-section{
-    background:#111;
+.filter{
+  border:1px solid var(--border);
+  background:#fff;
+  padding:9px 17px;
+  border-radius:25px;
+  cursor:pointer;
 }
 
-.gallery-tools{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    gap:8px;
-    margin-bottom:25px;
-}
-
-.filter-btn{
-    padding:9px 17px;
-    border-radius:22px;
-    border:1px solid #a47c2a;
-    background:#fff;
-    color:#765719;
-}
-
-.dark .filter-btn{
-    background:#202020;
-    color:#e2bd61;
-}
-
-.filter-btn.active,
-.filter-btn:hover{
-    background:#d4af57;
-    color:#111;
-}
-
-.upload-box{
-    max-width:800px;
-    margin:0 auto 35px;
-    padding:25px;
-    border:2px dashed #d4af57;
-    border-radius:15px;
-    text-align:center;
-    background:#faf8f1;
-}
-
-.dark .upload-box{
-    background:#1c1c1c;
-}
-
-.upload-box h3{
-    color:#9a7428;
-    margin-bottom:7px;
-}
-
-.upload-box p{
-    color:#666;
-    font-size:14px;
-    margin-bottom:15px;
-}
-
-.dark .upload-box p{
-    color:#bbb;
-}
-
-.file-input{
-    display:none;
-}
-
-.upload-label{
-    display:inline-block;
-    padding:13px 22px;
-    border-radius:8px;
-    background:#d4af57;
-    color:#111;
-    font-weight:bold;
+.filter.active,
+.filter:hover{
+  background:#111;
+  color:#fff;
 }
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
 }
 
 .gallery-item{
-    position:relative;
-    height:270px;
-    overflow:hidden;
-    border-radius:14px;
-    background:#eee;
-    cursor:pointer;
+  height:270px;
+  border-radius:16px;
+  overflow:hidden;
+  cursor:pointer;
 }
 
 .gallery-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
 }
 
 .gallery-item:hover img{
-    transform:scale(1.08);
+  transform:scale(1.07);
 }
 
-.gallery-overlay{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    padding:45px 14px 13px;
-    color:#fff;
-    background:linear-gradient(transparent,rgba(0,0,0,.88));
+/* PROCESS */
+.process{
+  background:#f7f5f0;
 }
 
-.gallery-overlay strong{
-    display:block;
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
 }
 
-.gallery-delete{
-    position:absolute;
-    right:10px;
-    top:10px;
-    border:0;
-    background:#d62828;
-    color:#fff;
-    width:36px;
-    height:36px;
-    border-radius:50%;
-    font-size:17px;
-    z-index:2;
+.step{
+  background:#fff;
+  padding:30px 20px;
+  border-radius:18px;
+  text-align:center;
 }
 
-.gallery-empty{
-    grid-column:1/-1;
-    text-align:center;
-    padding:40px;
-    border:1px dashed #bbb;
-    border-radius:12px;
-    color:#777;
+.step-number{
+  width:55px;
+  height:55px;
+  margin:0 auto 18px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#111;
+  color:#fff;
+  font-weight:900;
+  font-size:20px;
 }
 
-
-/* =========================================================
-   CALCULATOR
-========================================================= */
-
-.calculator-section{
-    background:#f0ece3;
+.step p{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:8px;
 }
 
-.dark .calculator-section{
-    background:#191919;
+/* PLANNER */
+.planner{
+  background:#111;
+  color:#fff;
 }
 
-.calculator{
-    max-width:720px;
-    margin:auto;
-    background:#fff;
-    padding:30px;
-    border-radius:16px;
-    box-shadow:0 8px 30px rgba(0,0,0,.1);
+.planner-box{
+  background:#1b1b1b;
+  border:1px solid #333;
+  padding:35px;
+  border-radius:22px;
+  max-width:850px;
+  margin:auto;
 }
 
-.dark .calculator{
-    background:#202020;
-}
-
-.form-group{
-    margin-bottom:17px;
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
 }
 
 label{
-    display:block;
-    font-weight:bold;
-    margin-bottom:5px;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:6px;
+  display:block;
 }
 
-input,
-select,
-textarea{
-    width:100%;
-    padding:13px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
-    background:#fff;
-    color:#111;
-}
-
-.dark input,
-.dark select,
-.dark textarea{
-    background:#111;
-    color:#fff;
-    border-color:#444;
+input,select,textarea{
+  width:100%;
+  padding:13px 14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  outline:none;
+  background:#fff;
 }
 
 textarea{
-    min-height:120px;
+  min-height:110px;
+  resize:vertical;
 }
 
-.total-box{
-    margin-top:20px;
-    padding:20px;
-    background:#f4efe3;
-    border-radius:10px;
-    text-align:center;
+.planner input,
+.planner select,
+.planner textarea{
+  border:1px solid #444;
 }
 
-.total-box h3{
-    color:#9a7428;
-    font-size:32px;
+.full{
+  grid-column:1/-1;
 }
 
-
-/* =========================================================
-   REVIEWS
-========================================================= */
-
-.review{
-    background:#fff;
-    padding:26px;
-    border-radius:14px;
-    border:1px solid #ddd;
+/* TESTIMONIALS */
+.testimonials{
+  background:#f7f5f0;
 }
 
-.dark .review{
-    background:#202020;
-    border-color:#333;
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.testimonial{
+  background:#fff;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
 }
 
 .stars{
-    color:#f3a600;
-    font-size:23px;
-    margin-bottom:8px;
+  color:#e0a500;
+  letter-spacing:2px;
+  margin-bottom:12px;
 }
 
-.review p{
-    color:#666;
+.testimonial p{
+  color:#555;
+  font-style:italic;
 }
 
-.dark .review p{
-    color:#ccc;
+.customer{
+  margin-top:18px;
+  font-weight:800;
 }
 
-
-/* =========================================================
-   FAQ
-========================================================= */
-
+/* FAQ */
 .faq{
-    max-width:850px;
-    margin:auto;
+  max-width:850px;
+  margin:auto;
 }
 
 .faq-item{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:10px;
-    overflow:hidden;
-    margin-bottom:12px;
-}
-
-.dark .faq-item{
-    background:#202020;
-    border-color:#333;
+  border-bottom:1px solid var(--border);
 }
 
 .faq-question{
-    padding:18px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.faq-icon{
-    font-size:22px;
-    color:#9a7428;
+  padding:20px 0;
+  display:flex;
+  justify-content:space-between;
+  cursor:pointer;
+  font-weight:800;
 }
 
 .faq-answer{
-    display:none;
-    padding:0 18px 18px;
-    color:#666;
+  display:none;
+  padding:0 0 20px;
+  color:var(--muted);
 }
 
-.dark .faq-answer{
-    color:#ccc;
+.faq-item.open .faq-answer{
+  display:block;
 }
 
-
-/* =========================================================
-   QUOTE FORM
-========================================================= */
-
-.quote-section{
-    background:#111;
+/* CONTACT */
+.contact{
+  background:#111;
+  color:#fff;
 }
 
-.quote-section .section-title h2{
-    color:#d4af57;
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
 }
 
-.quote-section .section-title p{
-    color:#ccc;
+.contact p{
+  color:#ccc;
 }
-
-.quote-form{
-    max-width:760px;
-    margin:auto;
-    background:#fff;
-    padding:30px;
-    border-radius:16px;
-}
-
-.dark .quote-form{
-    background:#202020;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
 
 .contact-info{
-    text-align:center;
+  margin-top:25px;
 }
 
-.contact-number{
-    display:inline-block;
-    padding:14px 20px;
-    margin:6px;
-    border-radius:9px;
-    background:#f1f1f1;
-    color:#333;
-    font-weight:bold;
+.contact-info div{
+  margin:18px 0;
 }
 
-.dark .contact-number{
-    background:#222;
-    color:#fff;
+.contact-info strong{
+  display:block;
+  color:#e0af2e;
+  margin-bottom:3px;
 }
 
-.map{
-    width:100%;
-    height:360px;
-    border:0;
-    border-radius:15px;
-    margin-top:35px;
+.contact-form{
+  background:#fff;
+  color:#111;
+  padding:30px;
+  border-radius:20px;
 }
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
+/* FOOTER */
 footer{
-    background:#050505;
-    color:#aaa;
-    text-align:center;
-    padding:42px 20px;
+  background:#080808;
+  color:#aaa;
+  padding:45px 0 25px;
 }
 
-footer strong{
-    color:#d4af57;
-    font-size:23px;
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
 }
 
-.footer-links{
-    margin:20px 0;
+footer h3{
+  color:#fff;
+  margin-bottom:15px;
 }
 
-.footer-links a{
-    color:#ddd;
-    margin:0 7px;
+footer a{
+  display:block;
+  margin:8px 0;
 }
 
-
-/* =========================================================
-   FLOATING WHATSAPP
-========================================================= */
-
-.whatsapp-floating{
-    position:fixed;
-    right:15px;
-    bottom:15px;
-    z-index:5000;
-
-    display:flex;
-    flex-direction:column;
-    gap:7px;
+.footer-bottom{
+  border-top:1px solid #222;
+  margin-top:30px;
+  padding-top:20px;
+  text-align:center;
+  font-size:13px;
 }
 
-.wa-button{
-    background:#25d366;
-    color:#fff;
-    padding:11px 15px;
-    border-radius:30px;
-    font-size:13px;
-    font-weight:bold;
-    box-shadow:0 5px 18px rgba(0,0,0,.25);
+/* FLOATING */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:28px;
+  z-index:999;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
-
-/* =========================================================
-   TOP BUTTON
-========================================================= */
-
-.top-button{
-    position:fixed;
-    right:18px;
-    bottom:145px;
-    width:45px;
-    height:45px;
-    border:0;
-    border-radius:50%;
-    background:#d4af57;
-    color:#111;
-    font-size:22px;
-    display:none;
-    z-index:5000;
+.call{
+  position:fixed;
+  left:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#111;
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  z-index:999;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
+.top{
+  position:fixed;
+  right:20px;
+  bottom:90px;
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  cursor:pointer;
+  z-index:998;
+  display:none;
+}
 
-/* =========================================================
-   MODAL
-========================================================= */
-
+/* MODAL */
 .modal{
-    position:fixed;
-    inset:0;
-    z-index:10000;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    background:rgba(0,0,0,.94);
-    padding:20px;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.9);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+  padding:20px;
 }
 
-.modal.show{
-    display:flex;
+.modal img{
+  max-width:900px;
+  max-height:85vh;
+  object-fit:contain;
 }
 
-.modal-image{
-    max-width:94%;
-    max-height:84vh;
-    object-fit:contain;
-    border-radius:10px;
+.close{
+  position:absolute;
+  right:25px;
+  top:15px;
+  color:#fff;
+  font-size:40px;
+  cursor:pointer;
 }
 
-.modal-close{
+/* DARK MODE */
+body.dark{
+  background:#101010;
+  color:#eee;
+}
+
+body.dark header,
+body.dark .furniture-card,
+body.dark .service,
+body.dark .step,
+body.dark .testimonial,
+body.dark .trust-grid{
+  background:#181818;
+  color:#eee;
+}
+
+body.dark .furniture-section,
+body.dark .rooms,
+body.dark .process,
+body.dark .testimonials{
+  background:#101010;
+}
+
+body.dark .section-head p,
+body.dark .service p,
+body.dark .furniture-content p,
+body.dark .step p{
+  color:#aaa;
+}
+
+.dark-toggle{
+  border:1px solid var(--border);
+  background:none;
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+  .nav-links{
     position:absolute;
-    right:25px;
-    top:10px;
-    color:#fff;
-    font-size:48px;
-    cursor:pointer;
-}
-
-
-/* =========================================================
-   TOAST
-========================================================= */
-
-.toast{
-    position:fixed;
-    left:50%;
-    bottom:30px;
-    transform:translateX(-50%);
-    background:#111;
-    color:#fff;
-    padding:13px 20px;
-    border-radius:8px;
-    z-index:15000;
+    left:0;
+    right:0;
+    top:76px;
+    background:#fff;
     display:none;
-    box-shadow:0 5px 20px #0005;
-}
+    flex-direction:column;
+    align-items:stretch;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+  }
 
-.toast.show{
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu{
     display:block;
+  }
+
+  .furniture-grid,
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .trust-grid,
+  .stats-grid,
+  .process-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .rooms-grid,
+  .testimonial-grid{
+    grid-template-columns:1fr 1fr;
+  }
 }
 
+@media(max-width:650px){
+  .topbar .container{
+    justify-content:center;
+    text-align:center;
+  }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+  .hero{
+    min-height:600px;
+  }
 
-@media(max-width:850px){
+  .hero h1{
+    font-size:44px;
+  }
 
-    .menu-button{
-        display:block;
-    }
+  .hero p{
+    font-size:16px;
+  }
 
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:72px;
-        left:0;
-        right:0;
-        background:#080808;
-        flex-direction:column;
-        align-items:stretch;
-        padding:18px 25px;
-        border-bottom:2px solid #d4af57;
-    }
+  section{
+    padding:65px 0;
+  }
 
-    .nav-links.show{
-        display:flex;
-    }
+  .furniture-grid,
+  .services-grid,
+  .rooms-grid,
+  .gallery,
+  .testimonial-grid,
+  .trust-grid,
+  .stats-grid,
+  .process-grid,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
 
-    .nav-links li{
-        text-align:center;
-        padding:5px;
-    }
+  .trust-item{
+    border-right:0;
+    border-bottom:1px solid var(--border);
+    padding-bottom:15px;
+  }
 
-    .gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .trust-item:last-child{
+    border:0;
+  }
 
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .gallery-item{
+    height:240px;
+  }
+
+  .about-image img{
+    height:350px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .full{
+    grid-column:auto;
+  }
+
+  .contact-form,
+  .planner-box{
+    padding:22px;
+  }
 }
-
-@media(max-width:600px){
-
-    section{
-        padding:55px 15px;
-    }
-
-    .navbar{
-        padding:8px 14px;
-    }
-
-    .brand-text{
-        font-size:16px;
-    }
-
-    .logo{
-        width:48px;
-        height:48px;
-    }
-
-    .hero{
-        min-height:600px;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-item{
-        height:250px;
-    }
-
-    .stats-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .stat h3{
-        font-size:35px;
-    }
-
-    .whatsapp-floating{
-        right:8px;
-        bottom:8px;
-    }
-
-    .wa-button{
-        font-size:11px;
-        padding:9px 12px;
-    }
-}
-
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<div class="topbar">
+  <div class="container">
+    <span>🏠 Complete Home Solutions</span>
+    <span>📞 7007115735 &nbsp; | &nbsp; 9889784730</span>
+  </div>
+</div>
 
 <header>
+  <div class="container nav">
 
-<div class="navbar">
+    <a href="#" class="logo">
+      INDRA <span>HOME SOLUTIONS</span>
+      <small>FURNITURE • INTERIOR • HOME</small>
+    </a>
 
-<div class="brand">
+    <button class="menu" id="menuBtn">☰</button>
 
-<img
-src="logo.png"
-class="logo"
-alt="INDRA HOME SOLUTIONS Logo">
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#furniture">Furniture</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="#quote" class="nav-btn">Get Quote</a>
+      <button class="dark-toggle" id="darkToggle">🌙</button>
+    </nav>
 
-<div class="brand-text">
-INDRA
-<small>HOME SOLUTIONS</small>
-</div>
-
-</div>
-
-
-<button
-class="menu-button"
-onclick="toggleMenu()"
-aria-label="Open Menu">
-
-☰
-
-</button>
-
-
-<ul
-class="nav-links"
-id="navLinks">
-
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#estimate">Estimate</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#contact">Contact</a></li>
-
-<li>
-<button
-class="filter-btn"
-onclick="toggleDark()">
-🌙
-</button>
-</li>
-
-</ul>
-
-</div>
-
+  </div>
 </header>
-
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
 
 <main>
 
-<section
-class="hero"
-id="home">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
 
-<div class="hero-content">
+      <span class="badge">SINCE 1998 • HOME & FURNITURE SOLUTIONS</span>
 
-<div class="hero-badge">
-WELCOME TO INDRA HOME SOLUTIONS
+      <h1>
+        Furniture That Makes
+        <span>Your Home Special.</span>
+      </h1>
+
+      <p>
+        Premium furniture, modular kitchen, wardrobes, TV units,
+        interior designing and complete home solutions — designed
+        according to your space and requirement.
+      </p>
+
+      <div class="buttons">
+        <a href="#furniture" class="btn btn-primary">Explore Furniture</a>
+        <a href="#quote" class="btn btn-light">Get Free Quote</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <strong>1998</strong>
+      <span>Working Since</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>10K+</strong>
+      <span>Projects</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>50+</strong>
+      <span>Workers</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>9+</strong>
+      <span>Service Areas</span>
+    </div>
+
+  </div>
 </div>
 
-<h1>
-Complete Home Solutions
-</h1>
+<!-- FURNITURE -->
+<section class="furniture-section" id="furniture">
 
-<h2>
-Furniture • Electrical • Interior
-</h2>
+  <div class="container">
 
-<p>
-Professional home project services in
-Kanpur and nearby areas. Discuss your
-requirement with us and get a quotation.
-</p>
+    <div class="section-head">
+      <div class="eyebrow">Our Main Focus</div>
+      <h2>Premium Furniture For Every Room</h2>
+      <p>
+        From stylish living room furniture to custom bedroom furniture,
+        we create furniture according to your space, design and requirements.
+      </p>
+    </div>
 
+    <div class="furniture-grid">
 
-<div class="hero-buttons">
+      <div class="furniture-card">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80">
+        <div class="furniture-content">
+          <h3>Living Room Furniture</h3>
+          <p>Sofa, center table, storage, wall units and custom furniture.</p>
+          <a href="#quote" class="view-link">Get Requirement →</a>
+        </div>
+      </div>
 
-<a
-href="#quote"
-class="btn gold">
+      <div class="furniture-card">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80">
+        <div class="furniture-content">
+          <h3>Bedroom Furniture</h3>
+          <p>Beds, side tables, dressing units and complete bedroom setup.</p>
+          <a href="#quote" class="view-link">Get Requirement →</a>
+        </div>
+      </div>
 
-GET FREE QUOTE
+      <div class="furniture-card">
+        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80">
+        <div class="furniture-content">
+          <h3>Wardrobe</h3>
+          <p>Modern wardrobes, sliding wardrobes and customized storage.</p>
+          <a href="#quote" class="view-link">Get Requirement →</a>
+        </div>
+      </div>
 
-</a>
+      <div class="furniture-card">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80">
+        <div class="furniture-content">
+          <h3>Custom Furniture</h3>
+          <p>Furniture designed and made according to your exact needs.</p>
+          <a href="#quote" class="view-link">Get Requirement →</a>
+        </div>
+      </div>
 
+    </div>
 
-<a
-href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20I%20need%20a%20quotation."
-target="_blank"
-class="btn green">
-
-WHATSAPP 7007115735
-
-</a>
-
-
-<a
-href="https://wa.me/919889784730?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20I%20need%20a%20quotation."
-target="_blank"
-class="btn green">
-
-WHATSAPP 9889784730
-
-</a>
-
-
-<a
-href="tel:+917007115735"
-class="btn black">
-
-📞 CALL NOW
-
-</a>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
+<!-- SERVICES -->
+<section id="services">
 
+  <div class="container">
 
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+    <div class="section-head">
+      <div class="eyebrow">What We Do</div>
+      <h2>Complete Home Solutions</h2>
+      <p>
+        One place for furniture, interiors, kitchen, electrical and
+        other home improvement requirements.
+      </p>
+    </div>
 
-<section
-class="about"
-id="about">
+    <div class="services-grid">
 
-<div class="about-content">
+      <div class="service">
+        <div class="icon">🪑</div>
+        <h3>Custom Furniture</h3>
+        <p>Furniture planned according to room size, style and requirement.</p>
+      </div>
 
-<h2>
-About INDRA HOME SOLUTIONS
-</h2>
+      <div class="service">
+        <div class="icon">🍳</div>
+        <h3>Modular Kitchen</h3>
+        <p>Modern kitchen layouts with practical storage and stylish designs.</p>
+      </div>
 
-<p>
-INDRA HOME SOLUTIONS is focused on
-providing furniture, electrical, interior
-and selected home project services.
-</p>
+      <div class="service">
+        <div class="icon">🚪</div>
+        <h3>Wardrobe & Sliding</h3>
+        <p>Smart storage solutions for bedrooms and other spaces.</p>
+      </div>
 
-<br>
+      <div class="service">
+        <div class="icon">📺</div>
+        <h3>TV Units</h3>
+        <p>Modern TV walls, storage units and entertainment furniture.</p>
+      </div>
 
-<p>
-Our aim is to make home projects easier
-for customers through professional
-communication, quality workmanship and
-convenient service.
-</p>
+      <div class="service">
+        <div class="icon">🛏️</div>
+        <h3>Bedroom Furniture</h3>
+        <p>Beds, dressing tables, side tables and complete bedroom setup.</p>
+      </div>
 
-<div class="owner-name">
-Owner / Proprietor:
-<strong>Ram Milan</strong>
-</div>
+      <div class="service">
+        <div class="icon">🛋️</div>
+        <h3>Living Room</h3>
+        <p>Furniture solutions for comfortable and attractive living spaces.</p>
+      </div>
 
-</div>
+      <div class="service">
+        <div class="icon">🚪</div>
+        <h3>Doors & Windows</h3>
+        <p>Home doors and window related work according to requirements.</p>
+      </div>
+
+      <div class="service">
+        <div class="icon">🎨</div>
+        <h3>Interior Designing</h3>
+        <p>Space planning and interior solutions for a better home experience.</p>
+      </div>
+
+      <div class="service">
+        <div class="icon">💡</div>
+        <h3>Electrical Work</h3>
+        <p>Electrical work and solutions for home projects.</p>
+      </div>
+
+      <div class="service">
+        <div class="icon">📐</div>
+        <h3>Space Planning</h3>
+        <p>Better utilization of available space with practical planning.</p>
+      </div>
+
+      <div class="service">
+        <div class="icon">🏠</div>
+        <h3>Complete Home Work</h3>
+        <p>Multiple home requirements handled under one roof.</p>
+      </div>
+
+      <div class="service">
+        <div class="icon">✨</div>
+        <h3>Special Custom Work</h3>
+        <p>Tell us your requirement and we can plan a suitable solution.</p>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
+<!-- ABOUT -->
+<section class="about">
 
+  <div class="container about-grid">
 
-<!-- =====================================================
-     SERVICES
-===================================================== -->
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85">
+    </div>
 
-<section
-class="services-section"
-id="services">
+    <div>
+      <div class="eyebrow">About INDRA HOME SOLUTIONS</div>
 
-<div class="container">
+      <h2>Experience, Craftsmanship & Complete Home Solutions</h2>
 
-<div class="section-title">
+      <p>
+        INDRA HOME SOLUTIONS has been working in home and furniture
+        solutions since 1998.
+      </p>
 
-<h2>
-Our Services
-</h2>
+      <p>
+        Our work includes furniture, modular kitchen, interior,
+        electrical work, doors/windows and other home requirements.
+      </p>
 
-<p>
-Complete solutions for your home requirements
-</p>
+      <ul class="check-list">
+        <li>Furniture focused solutions</li>
+        <li>Customized designs</li>
+        <li>Multiple home services</li>
+        <li>Experienced working team</li>
+        <li>Solutions for residential requirements</li>
+      </ul>
 
+      <a href="#quote" class="btn btn-primary">Discuss Your Project</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ROOMS -->
+<section class="rooms">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Room Wise</div>
+      <h2>Furniture For Every Space</h2>
+    </div>
+
+    <div class="rooms-grid">
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80">
+        <div class="room-overlay"><h3>Living Room</h3></div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80">
+        <div class="room-overlay"><h3>Bedroom</h3></div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=900&q=80">
+        <div class="room-overlay"><h3>Kitchen</h3></div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80">
+        <div class="room-overlay"><h3>Wardrobe</h3></div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80">
+        <div class="room-overlay"><h3>TV Unit</h3></div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=80">
+        <div class="room-overlay"><h3>Custom Furniture</h3></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+  <div class="container stats-grid">
+
+    <div class="stat">
+      <strong>1998</strong>
+      <span>Since</span>
+    </div>
+
+    <div class="stat">
+      <strong>10K+</strong>
+      <span>Projects</span>
+    </div>
+
+    <div class="stat">
+      <strong>50+</strong>
+      <span>Workers</span>
+    </div>
+
+    <div class="stat">
+      <strong>9+</strong>
+      <span>Service Areas</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Our Work</div>
+      <h2>Furniture & Interior Gallery</h2>
+      <p>Explore different furniture and home design ideas.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="furniture">Furniture</button>
+      <button class="filter" data-filter="kitchen">Kitchen</button>
+      <button class="filter" data-filter="wardrobe">Wardrobe</button>
+      <button class="filter" data-filter="tv">TV Unit</button>
+      <button class="filter" data-filter="interior">Interior</button>
+    </div>
+
+    <div class="gallery">
+
+      <div class="gallery-item" data-category="furniture">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="kitchen">
+        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="wardrobe">
+        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="tv">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="furniture">
+        <img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="kitchen">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="furniture">
+        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+      <div class="gallery-item" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>Simple Project Process</h2>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Tell Us</h3>
+        <p>Share your furniture or home requirement.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Discuss</h3>
+        <p>Discuss design, space and project requirements.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Plan</h3>
+        <p>Plan the suitable solution for your project.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Work</h3>
+        <p>Move forward with the project work.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REQUIREMENT PLANNER -->
+<section class="planner" id="quote">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Quick Requirement Planner</div>
+      <h2>Tell Us What You Need</h2>
+      <p style="color:#aaa;">
+        Fill the form and your requirement will be prepared for WhatsApp.
+      </p>
+    </div>
+
+    <div class="planner-box">
+
+      <div class="form-grid">
+
+        <div>
+          <label>Your Name</label>
+          <input id="pName" type="text" placeholder="Enter your name">
+        </div>
+
+        <div>
+          <label>Phone Number</label>
+          <input id="pPhone" type="tel" placeholder="Enter phone number">
+        </div>
+
+        <div>
+          <label>Service</label>
+          <select id="pService">
+            <option>Furniture</option>
+            <option>Modular Kitchen</option>
+            <option>Wardrobe</option>
+            <option>TV Unit</option>
+            <option>Bedroom Furniture</option>
+            <option>Living Room Furniture</option>
+            <option>Interior Designing</option>
+            <option>Doors & Windows</option>
+            <option>Electrical Work</option>
+            <option>Complete Home Work</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Project Type</label>
+          <select id="pType">
+            <option>New Work</option>
+            <option>Renovation</option>
+            <option>Custom Furniture</option>
+            <option>Complete Home</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label>Your Requirement</label>
+          <textarea id="pMessage" placeholder="Example: Bedroom wardrobe + bed + dressing unit..."></textarea>
+        </div>
+
+        <div class="full">
+          <button class="btn btn-primary" onclick="sendPlanner()">
+            Send Requirement on WhatsApp
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Customer Experience</div>
+      <h2>What Customers Say</h2>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Furniture requirement ke according design karwana bahut easy raha."
+        </p>
+        <div class="customer">— Customer</div>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Home ke multiple kaam ke liye ek hi jagah par solution mila."
+        </p>
+        <div class="customer">— Customer</div>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Custom furniture aur interior requirement ke liye achha experience raha."
+        </p>
+        <div class="customer">— Customer</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ -->
+<section>
+
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Kaun-kaun se furniture kaam hote hain?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Living room, bedroom, wardrobe, TV unit aur customized furniture requirements discuss ki ja sakti hain.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Kya modular kitchen ka kaam hota hai?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Haan, modular kitchen requirements ke liye bhi enquiry ki ja sakti hai.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Kya furniture custom size me ban sakta hai?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Custom furniture ke liye aap apni space aur requirement share kar sakte hain.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Quote kaise milega?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Requirement form fill karke WhatsApp par details bhej sakte hain.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Kaise contact karein?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          7007115735 ya 9889784730 par contact kar sakte hain.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="container contact-grid">
+
+    <div>
+
+      <div class="eyebrow">Contact Us</div>
+
+      <h2>Let's Discuss Your Home Project</h2>
+
+      <p>
+        Furniture, kitchen, wardrobe, TV unit, interior ya kisi bhi
+        home requirement ke liye contact karein.
+      </p>
+
+      <div class="contact-info">
+
+        <div>
+          <strong>📞 Phone</strong>
+          <a href="tel:7007115735">7007115735</a><br>
+          <a href="tel:9889784730">9889784730</a>
+        </div>
+
+        <div>
+          <strong>💬 WhatsApp</strong>
+          <a href="https://wa.me/917007115735" target="_blank">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <strong>📍 Service Area</strong>
+          Kanpur and nearby areas
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="contact-form">
+
+      <h3>Send Enquiry</h3>
+      <br>
+
+      <input id="cName" type="text" placeholder="Your Name">
+      <br><br>
+
+      <input id="cPhone" type="tel" placeholder="Phone Number">
+      <br><br>
+
+      <select id="cService">
+        <option>Furniture</option>
+        <option>Modular Kitchen</option>
+        <option>Wardrobe</option>
+        <option>TV Unit</option>
+        <option>Interior Design</option>
+        <option>Other</option>
+      </select>
+      <br><br>
+
+      <textarea id="cMessage" placeholder="Tell us about your requirement"></textarea>
+      <br><br>
+
+      <button class="btn btn-primary" onclick="sendContact()">
+        Send on WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>INDRA HOME SOLUTIONS</h3>
+        <p>
+          Furniture, modular kitchen, wardrobe, TV unit, interior
+          designing and complete home solutions.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#furniture">Furniture</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <a href="#furniture">Furniture</a>
+        <a href="#services">Kitchen</a>
+        <a href="#services">Wardrobe</a>
+        <a href="#services">TV Unit</a>
+        <a href="#services">Interior</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> INDRA HOME SOLUTIONS. All Rights Reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- FLOATING BUTTONS -->
+
+<a class="whatsapp"
+   href="https://wa.me/917007115735?text=Hello%20INDRA%20HOME%20SOLUTIONS,%20mujhe%20home/furniture%20work%20ke%20baare%20me%20jaankari%20chahiye."
+   target="_blank"
+   aria-label="WhatsApp">
+  💬
+</a>
+
+<a class="call"
+   href="tel:7007115735"
+   aria-label="Call">
+  📞
+</a>
+
+<button class="top" id="topBtn">↑</button>
+
+<!-- IMAGE MODAL -->
+<div class="modal" id="modal">
+  <span class="close" id="closeModal">&times;</span>
+  <img id="modalImg" src="" alt="Gallery Image">
 </div>
 
+<script>
 
-<div class="grid">
+/* MOBILE MENU */
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
+menuBtn.addEventListener("click",()=>{
+  navLinks.classList.toggle("show");
+});
 
-<div class="card">
-<div class="card-icon">🪑</div>
-<h3>Furniture Work</h3>
-<p>
-Customized furniture for bedrooms,
-living rooms, offices and other spaces.
-</p>
-</div>
-
-
-<div class="card">
-<div class="card-icon">🚪</div>
-<h3>Sliding Furniture</h3>
-<p>
-Sliding wardrobes, cabinets and
-space-saving furniture solutions.
-</p>
-</div>
+document.querySelectorAll(".nav-links a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    navLinks.classList.remove("show");
+  });
+});
 
 
-<div class="card">
-<div class="card-icon">🍳</div>
-<h3>Modular Kitchen</h3>
-<p>
-Modern and practical modular kitchen
-solutions according to available space.
-</p>
-</div>
+/* DARK MODE */
+const darkToggle = document.getElementById("darkToggle");
+
+darkToggle.addEventListener("click",()=>{
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+    localStorage.setItem("darkMode","on");
+    darkToggle.textContent="☀️";
+  }else{
+    localStorage.removeItem("darkMode");
+    darkToggle.textContent="🌙";
+  }
+});
+
+if(localStorage.getItem("darkMode")==="on"){
+  document.body.classList.add("dark");
+  darkToggle.textContent="☀️";
+}
 
 
-<div class="card">
-<div class="card-icon">⚡</div>
-<h3>House Electrical Wiring</h3>
-<p>
-Electrical wiring solutions for
-construction and renovation projects.
-</p>
-</div>
+/* GALLERY FILTER */
+const filters = document.querySelectorAll(".filter");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+filters.forEach(filter=>{
+  filter.addEventListener("click",()=>{
+
+    filters.forEach(x=>x.classList.remove("active"));
+    filter.classList.add("active");
+
+    const category = filter.dataset.filter;
+
+    galleryItems.forEach(item=>{
+
+      if(category==="all" || item.dataset.category===category){
+        item.style.display="block";
+      }else{
+        item.style.display="none";
+      }
+
+    });
+
+  });
+});
 
 
-<div class="card">
-<div class="card-icon">💡</div>
-<h3>Electrical Installation</h3>
-<p>
-Lights, fans, switches, sockets and
-selected electrical installations.
-</p>
-</div>
+/* IMAGE MODAL */
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const closeModal = document.getElementById("closeModal");
+
+galleryItems.forEach(item=>{
+  item.addEventListener("click",()=>{
+    modal.style.display="flex";
+    modalImg.src=item.querySelector("img").src;
+  });
+});
+
+closeModal.addEventListener("click",()=>{
+  modal.style.display="none";
+});
+
+modal.addEventListener("click",(e)=>{
+  if(e.target===modal){
+    modal.style.display="none";
+  }
+});
 
 
-<div class="card">
-<div class="card-icon">🏠</div>
-<h3>Interior Work</h3>
-<p>
-Practical and stylish interior
-improvement solutions.
-</p>
-</div>
+/* FAQ */
+document.querySelectorAll(".faq-question").forEach(question=>{
+
+  question.addEventListener("click",()=>{
+
+    const item=question.parentElement;
+    item.classList.toggle("open");
+
+    const symbol=question.querySelector("span:last-child");
+
+    symbol.textContent=
+      item.classList.contains("open") ? "−" : "+";
+
+  });
+
+});
 
 
-<div class="card">
-<div class="card-icon">🪟</div>
-<h3>Doors & Windows</h3>
-<p>
-Modern doors and windows for home
-improvement requirements.
-</p>
-</div>
+/* PLANNER WHATSAPP */
+function sendPlanner(){
+
+  const name=document.getElementById("pName").value.trim();
+  const phone=document.getElementById("pPhone").value.trim();
+  const service=document.getElementById("pService").value;
+  const type=document.getElementById("pType").value;
+  const message=document.getElementById("pMessage").value.trim();
+
+  if(!name || !phone){
+    alert("Please enter your name and phone number.");
+    return;
+  }
+
+  const text=
+`Hello INDRA HOME SOLUTIONS,
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Project Type: ${type}
+
+Requirement:
+${message || "I want to discuss my requirement."}`;
+
+  window.open(
+    "https://wa.me/917007115735?text="+encodeURIComponent(text),
+    "_blank"
+  );
+
+}
 
 
-<div class="card">
-<d
+/* CONTACT WHATSAPP */
+function sendContact(){
 
-    
+  const name=document.getElementById("cName").value.trim();
+  const phone=document.getElementById("cPhone").value.trim();
+  const service=document.getElementById("cService").value;
+  const message=document.getElementById("cMessage").value.trim();
+
+  if(!name || !phone){
+    alert("Please enter your name and phone number.");
+    return;
+  }
+
+  const text=
+`Hello INDRA HOME SOLUTIONS,
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+
+Requirement:
+${message || "Please contact me regarding my requirement."}`;
+
+  window.open(
+    "https://wa.me/917007115735?text="+encodeURIComponent(text),
+    "_blank"
+  );
+
+}
+
+
+/* BACK TO TOP */
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+  if(window.scrollY>500){
+    topBtn.style.display="grid";
+  }else{
+    topBtn.style.display="none";
+  }
+
+});
+
+topBtn.addEventListener("click",()=>{
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+});
+
+
+/* CURRENT YEAR */
+document.getElementById("year").textContent=
+new Date().getFullYear();
+
+
+/* ESCAPE MODAL */
+document.addEventListener("keydown",(e)=>{
+  if(e.key==="Escape"){
+    modal.style.display="none";
+  }
+});
+
+</script>
+
+</body>
+</html>
